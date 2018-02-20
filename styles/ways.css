@@ -8,59 +8,63 @@ body{
 } 
 
 .container{
-	 vertical-align: middle;
+	vertical-align: middle;
 	background-color: #228B22;
 	margin: auto;
 	width: 95%;
-	/*height: 98%; */
 	margin-bottom: 20px;
 	margin-top: 20px;
 	text-align: middle;
 	border: 5px dotted #006400;
 }
 
-h1{
+p, h2{
+	padding-left:20px;
+	padding-right:20px;
+	text-align: justify;
+}
+ 
+.desc{
+	color: yellow;
+	font-size: 30px;
+}
+
+.ways a{
+	text-decoration:none;
+	display:block;
+	margin:auto;
+	margin-left: 40px;
+	width: 93%;
+	height: 7%; 
+	background: linear-gradient(to bottom, #F0FFF0 0%, #00FF00 100%);
+    font-size: 30px; /* Размер шрифта */
+    padding: 20px 10px; /* Поля вокруг текста */
+    color: #8B008B; /* Цвет текста */
+    border: 1px solid #006400; /* Параметры рамки */
+    border-radius: 30px; /* Радиус скругления */
+	margin-bottom: 30px;
+ }
+  
+.ways a:hover{
+	width: 94%;
+	height: 7%; 
+	margin-left: 37px;
+	background: linear-gradient(to top, #7FFFD4 0%, #00FF00 100%);
+    font-size: 35px; /* Размер шрифта */
+    padding: 30px 10px; /* Поля вокруг текста */
+    color: #8B008B; /* Цвет текста */
+    border: 3x solid blue; /* Параметры рамки */
+    border-radius: 30px; /* Радиус скругления */
+	margin-bottom: 25px;
+ }
+ 
+ h1{
 	text-align: center;
 	font-family: Century;
 	font-size: 46px;	
 	line-height:50%;
 	color: #000080;
 }
-h2{
-	text-decoration:none;
-}
-.way{
-	display:block;
-	text-align: center;
-	/*margin:auto;*/
-	margin-left: 40px;
-	width: 95%;
-	height: 7%; 
-	background: #b5bdc8;
-    background: linear-gradient(to bottom, #F0FFF0 0%, #00FF00 100%);
-    font-size: 30px; /* Размер шрифта */
-    padding: 30px 10px; /* Поля вокруг текста */
-    color: #8B008B; /* Цвет текста */
-    border: 1px solid #006400; /* Параметры рамки */
-    border-radius: 30px; /* Радиус скругления */
-	margin-bottom: 25px;
-	line-height:20%;
-  }
-  
- .way:hover{
-	text-align: center;
-	margin-left: 27px;
-	width: 97%;
-	height: 7%; 
-	background: #b5bdc8;
-    background: linear-gradient(to top, #7FFFD4 0%, #00FF00 100%);
-    font-size: 35px; /* Размер шрифта */
-    padding: 30px 10px; /* Поля вокруг текста */
-    color: #8B008B; /* Цвет текста */
-    border: 3x solid #00008B; /* Параметры рамки */
-    border-radius: 30px; /* Радиус скругления */
-	margin-bottom: 25px;
- line-height:18%;}
  
  button:hover, menuButton:hover{
 	-webkit-box-shadow:rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
@@ -95,13 +99,7 @@ h2{
  	 margin-left: 45%;
 	  background: linear-gradient(to right, #191970 50%, #00FF00 100%);
  }
- 
- /* #next{
-	 
-   	margin-left: 45%;
-	background: linear-gradient(to left, #191970 50%, #00FF00 100%);
- }*/
-  
+   
   .menuButton:hover{
 	text-align: center;
 	margin-left: 40px;
@@ -117,5 +115,3 @@ h2{
 	   margin-left: 45%;
 		line-height:20%;
 }
-	
-
