@@ -15,8 +15,9 @@
                 center: {lat: 50.0106394, lng: 36.2411565} //center of view
             });
             // Load a GeoJSON from the same server as our demo.
-            map.data.loadGeoJson('data/bus-stops.json');
-            if(navigator.geolocation) {
+            map.data.loadGeoJson('data/route_golden_way.json');
+			
+			if(navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(function(position) {
                     var pos = new google.maps.LatLng(position.coords.latitude,
                         position.coords.longitude);
@@ -37,8 +38,16 @@
                 infowindow.open(map);
             });
         }
+		function gmap() {
+		 if (GBrowserIsCompatible()) {
+				map.addControl(new google.maps.LocalSearch(), new GControlPosition(G_ANCHOR_TOP_RIGHT, new GSize(10,30)));
+            }
+			}
         google.maps.event.addDomListener(window, 'load', initialize);
     </script>
+	<script src="http://www.google.com/uds/api?file=uds.js&v=1.0" type="text/javascript"></script><script src="http://www.google.com/uds/solutions/localsearch/gmlocalsearch.js" type="text/javascript"></script>
+
+
 </head>
 <body>
 <div id="map-canvas"></div>
