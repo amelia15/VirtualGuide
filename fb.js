@@ -9,7 +9,7 @@
     function addItem(item) {
 	
         //cоздадим новый элемент списка с данными из аргумента (каждый item состоит из ключа и значения)
-        var newItem = '<a href="map.html" name="'+item.key+'"><div><h2 class="way">'+item.val().name+' </h2><p>'+item.val().desc+'</p></div></a>';
+        var newItem = '<a href="map.html" name="'+item.key+'"><div><h2 class="way">'+item.val().name+' </h2>' +'<p class="desc">'+item.val().desc+' </p><p>'+item.val().sights+'</p></div></a>';
         //добавление элемента списка в список
         document.querySelector('.ways').innerHTML += newItem;
     }
