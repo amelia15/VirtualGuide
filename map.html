@@ -15,7 +15,7 @@
                 center: {lat: 50.0106394, lng: 36.2411565} //center of view
             });
             // Load a GeoJSON from the same server as our demo.
-            map.data.loadGeoJson('data/bus-stops.json');
+            map.data.loadGeoJson('data/route_golden_way.json');
             if(navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(function(position) {
                     var pos = new google.maps.LatLng(position.coords.latitude,
