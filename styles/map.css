@@ -1,153 +1,79 @@
-body{
-	background-color: #18F427;
-	/*#00FA9A* #00FF7F*/
-}
-
+ body {
+    background-color: #18F427;
+ }
+  
 #google_translate_element{
 	margin-bottom: 15px;
 } 
 
-.container{
-	vertical-align: middle;
-	background-color: #228B22;
+#map-canvas{
 	margin: auto;
-	width: 95%;
-	margin-bottom: 20px;
-	margin-top: 20px;
-	text-align: middle;
-	border: 5px dotted #006400;
-}
-
-p, h2{
-	text-indent: 40px;
-	padding-left:20px;
-	padding-right:20px;
-	text-align: justify;
-	text-shadow: 0px 0px 6px rgba(255,255,255,0.2);
-}
-
-h2{
-	padding-top:20px;
-	text-align:center;
-	text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
-                 10px 20px 5px rgba(0,0,0,0.05),
-                 -10px 20px 5px rgba(0,0,0,0.05);
-
-
-
-}
- 
-.desc{
-	color: #DC143C;
-	/*font-size: 30px;*/
-}
-
-.ways a{
+	/*margin-bottom:30px;*/
 	vertical-align: middle;
-	text-decoration:none;
-	display:block;
-	margin:auto;
-	/*margin-left: 40px;*/
-	width: 93%;
-	height: 5%; 
-	background: linear-gradient(to bottom, #00FF7F 0%, #00FF00 100%);
-    font-size: 25px; /* Размер шрифта */
-    /*padding: 10px; /* Поля вокруг текста */
-    color: #8B008B; /* Цвет текста */
-    border: 1px solid black; /* Параметры рамки #006400*/
-	border-radius: 30px; /* Радиус скругления */
-	margin-bottom: 30px;
- }
-  
-.ways a:hover{
-	width: 94%;
-	height: 5%; 
-	/*margin-left: 35px;*/
-	
-	background: linear-gradient(to top, #00BFFF 20%, #00FF00 80%);
-    font-size: 27px; /* Размер шрифта */
-    /*padding: 30px 10px; /* Поля вокруг текста */
-    color: #8B008B; /* Цвет текста */
-    /*border: 3px dashed #0000CD;*/
-	
-	border: 2px inset #4B0082;  Параметры рамки #006400;
-	
-	
-	/* border-top-radius: 30px; /* Радиус скругления
-    border-width: 2px;
-	border-style: dashed;
-    -webkit-border-image: 
-      -webkit-gradient(linear, 0 0, 0 100%, from(Navy), to(rgba(0, 0, 0, 0))) 1 100%;
-    -webkit-border-image: 
-      -webkit-linear-gradient(Navy, rgba(0, 0, 0, 0)) 1 100%;
-    -moz-border-image:
-      -moz-linear-gradient(Navy, rgba(0, 0, 0, 0)) 1 100%;    
-    -o-border-image:
-      -o-linear-gradient(Navy, rgba(0, 0, 0, 0)) 1 100%;
-    border-image:
-      linear-gradient(to bottom, Navy, rgba(0, 0, 0, 0)) 1 100%;*/
-	
-   
-	margin-bottom: 25px;
- }
- 
- h1{
-	 margin:auto;
-	text-align: center;
-	font-family: Century;
-	font-size: 46px;	
-	line-height:50%;
-	color: #000080;
-	margin-top: 40px;
-	margin-bottom: 40px;
-	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-
-                 0px -5px 35px rgba(255,255,255,0.3);
-
-	
+	width: 95vw;
+	height:95vh; 
+	text-align: middle;
+	border: 4px dotted #006400;
 }
- 
- .ways a:hover, .menuButton:hover{
-	-webkit-box-shadow:rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-     -khtml-box-shadow:rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-       -moz-box-shadow:rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-         -o-box-shadow:rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-            box-shadow:rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-  
-  }
-    
- .menuButton{
-	  display:block;
+		
+/*.location{
+	width: 32%;
+	height: 100px; 
+	vertical-align: middle;
+	margin-left:35px;
+	padding-bottom:10px;
+	padding-top:10px;
 	text-align: center;
-	text-decoration:none;
-	/*margin-left: 40px;*/
-	width: 15%;
-	height: 39%; 
-	background: #b5bdc8;
-    
-    font-size: 20px; /* Размер шрифта */
-    padding: 10px 10px; /* Поля вокруг текста */
-    color: #8B008B; /* Цвет текста */
-    border: 1px solid #191970; /* Параметры рамки */
-    border-radius: 40px; /* Радиус скругления */
-	margin-bottom: 30px;
-	line-height:20%;
- 	 margin-left: 45%;
-	  background: linear-gradient(to right, #191970 0%, #00FF00 100%);
- }
-   
-  .menuButton:hover{
-	text-align: center;
-	margin-left: 40px;
-	width: 16%;
-	height: 30%; 
-	background: #b5bdc8;
-    background: linear-gradient(to left, #191970 50%, #00FF00 100%);
-    font-size: 25px; /* Размер шрифта */
-      padding: 10px 10px; /* Поля вокруг текста */
-    color: #8B008B; /* Цвет текста */
-    border: 1px solid #191970; /* Параметры рамки */
-	   border-radius: 40px; /* Радиус скругления */
-	   margin-left: 45%;
-		line-height:20%;
-}
+	/*position:fixed;*/
+/*	bottom: 100px;
+	left:50px;
+	background: rgba(111,245,158,0.61); 
+	border: 2px dotted #006400;
+}*/
+
+
+
+ .controls {
+        margin-top: 10px;
+        border: 1px solid transparent;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        height: 32px;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      #pac-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 300px;
+      }
+
+      #pac-input:focus {
+        border-color: #4d90fe;
+      }
+
+      .pac-container {
+        font-family: Roboto;
+      }
+
+      #type-selector {
+        color: #fff;
+        background-color: #4d90fe;
+        padding: 5px 11px 0px 11px;
+      }
+
+      #type-selector label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+      }
+      #target {
+        width: 345px;
+      }
