@@ -67,7 +67,7 @@ figure:hover::after{
     border: 1px solid #333; /* Параметры рамки */
    }
 
- .general_info{
+ .general_facts{
 	 left: 7%;
 	 text-align: justify;
 	  color: #98FB98;
@@ -139,42 +139,24 @@ figure:hover::after{
   
   }
  
- .menuButton{
-	 display:block;
-	text-align: center;
-	margin-left: 50%;
-	width: 9%;
-	height: 19%; 
-	background: #b5bdc8;
-   background: linear-gradient(to right, #191970 50%, #00FF00 100%);
-	
-	 /*background: -moz-linear-gradient(#D0ECF4, #5BC9E1, #D0ECF4);
-    background: -webkit-gradient(linear, 0 0, 0  100%, from(#191970), to(#00FF00), color-stop(0.5, #00FF7F));
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='yellow', endColorstr='#00FF00'); */
-   
-	
-    font-size: 20px; /* Размер шрифта */
-    padding: 10px 10px; /* Поля вокруг текста */
-    color: #8B008B; /* Цвет текста */
-    border: 1px solid #191970; /* Параметры рамки */
-    border-radius: 40px; /* Радиус скругления */
-	margin-bottom: 30px;
-	line-height:20%;
- }
- 
-  
-  .menuButton:hover{
-	text-align: center;
-	margin-left: 50%;
-	width: 9%;
-	height: 19%; 
-	background: #b5bdc8;
-    background: linear-gradient(to left, #191970 50%, #00FF00 100%);
-    font-size: 25px; /* Размер шрифта */
-      padding: 10px 10px; /* Поля вокруг текста */
-    color: #8B008B; /* Цвет текста */
-    border: 1px solid #191970; /* Параметры рамки */
-    border-radius: 40px; /* Радиус скругления */
-	/*margin-bottom: 25px;*/
-	line-height:20%;
-	}
+ .menuButton {
+  text-decoration: none;
+  /*outline: none;*/
+  display: inline-block;
+  padding: 12px 40px;
+  margin: auto;
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, #6ab1d7 0%, #33d9de 50%, #191970 100%);
+  background-position: 100% 0;
+  background-size: 200% 200%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: white;
+  box-shadow: 0 16px 32px 0 rgba(0,40,120,.35);
+  transition: .5s;
+}
+.menuButton:hover {
+  box-shadow: 0 0 0 0 rgba(0,40,120,0);
+  background-position: 0 0;
+}
