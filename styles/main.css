@@ -11,10 +11,11 @@ body{
 	margin: auto;
 	width: 95%;
 	height: 95%; 
-	text-align: middle;
+	text-align: center;
 	border: 5px dotted #006400;
 }
-.info{
+
+.top{
 	margin: auto;	
 	text-align: center;
 	margin-bottom: 25px;
@@ -76,19 +77,19 @@ figure:hover::after{
 	line-height:120%;
  }
  
-.buttonsMain{
+/*.buttonsMain{
 	text-align: center;
 	margin-left: 40px;
-	/*margin:auto;*/
+	margin:auto;
 	width: 95%;
 	height: 7%; 
 	background: #b5bdc8;
     background: linear-gradient(to bottom, #F0FFF0 0%, #00FF00 100%);
-    font-size: 30px; /* Размер шрифта */
-    padding: 30px 10px; /* Поля вокруг текста */
-    color: #006400; /* Цвет текста */
-    border: 1px solid #006400; /* Параметры рамки */
-    border-radius: 30px; /* Радиус скругления */
+    font-size: 30px; 
+    padding: 30px 10px; 
+    color: #006400; 
+    border: 1px solid #006400; 
+    border-radius: 30px; 
 	margin-bottom: 30px;
 	line-height:20%;
   }
@@ -100,14 +101,14 @@ figure:hover::after{
 	height: 7%; 
 	background: #b5bdc8;
     background: linear-gradient(to top, #7FFFD4 0%, #00FF00 100%);
-    font-size: 35px; /* Размер шрифта */
-    padding: 30px 10px; /* Поля вокруг текста */
-    color: #006400; /* Цвет текста */
-    border: 4x solid #000080; /* Параметры рамки */
-    border-radius: 30px; /* Радиус скругления */
+    font-size: 35px; 
+    padding: 30px 10px; 
+    color: #006400; 
+    border: 4x solid #000080; 
+    border-radius: 30px; 
 	margin-bottom: 25px;
 	line-height:18%;
-  }
+  }*/
   
   
  #history_text {
@@ -146,6 +147,8 @@ figure:hover::after{
   padding: 12px 40px;
   margin: auto;
   border-radius: 30px;
+  border: 1px solid black;
+  
   background-image: linear-gradient(45deg, #6ab1d7 0%, #33d9de 50%, #191970 100%);
   background-position: 100% 0;
   background-size: 200% 200%;
@@ -155,8 +158,83 @@ figure:hover::after{
   color: white;
   box-shadow: 0 16px 32px 0 rgba(0,40,120,.35);
   transition: .5s;
+  padding-bottom:25px;
 }
 .menuButton:hover {
   box-shadow: 0 0 0 0 rgba(0,40,120,0);
   background-position: 0 0;
+  border: 2px inset #4B0082; 
 }
+
+p, h2{
+	text-indent: 40px;
+	padding-left:20px;
+	padding-right:20px;
+	text-align: justify;
+	text-shadow: 0px 0px 6px rgba(255,255,255,0.2);
+}
+
+h2{
+	padding-top:20px;
+	text-align:center;
+	text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+                 10px 20px 5px rgba(0,0,0,0.05),
+                 -10px 20px 5px rgba(0,0,0,0.05);
+
+
+
+}
+
+.name {
+	vertical-align: middle;
+	text-decoration:none;
+	display:block;
+	margin:auto;
+	/*margin-left: 40px;*/
+	width: 93%;
+	height: 6%; 
+	background: linear-gradient(to bottom, #00FF7F 0%, #00FF00 100%);
+    font-size: 25px; /* Размер шрифта */
+    /*padding: 10px; /* Поля вокруг текста */
+    color: #8B008B; /* Цвет текста */
+    border: 1px solid black; /* Параметры рамки #006400*/
+	border-radius: 30px; /* Радиус скругления */
+	margin-bottom: 30px;
+ }
+  
+.name :hover{
+	width: 94%;
+	height: 6%; 
+	/*margin-left: 35px;*/
+	
+	background: linear-gradient(to top, #00BFFF 20%, #00FF00 80%);
+    font-size: 27px; /* Размер шрифта */
+    /*padding: 30px 10px; /* Поля вокруг текста */
+    color: #8B008B; /* Цвет текста */
+    /*border: 3px dashed #0000CD;*/
+	
+	border: 2px inset #4B0082;  
+	
+	
+	/* border-top-radius: 30px; /* Радиус скругления
+    border-width: 2px;
+	border-style: dashed;
+    -webkit-border-image: 
+      -webkit-gradient(linear, 0 0, 0 100%, from(Navy), to(rgba(0, 0, 0, 0))) 1 100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(Navy, rgba(0, 0, 0, 0)) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(Navy, rgba(0, 0, 0, 0)) 1 100%;    
+    -o-border-image:
+      -o-linear-gradient(Navy, rgba(0, 0, 0, 0)) 1 100%;
+    border-image:
+      linear-gradient(to bottom, Navy, rgba(0, 0, 0, 0)) 1 100%;*/
+	
+   
+	margin-bottom: 25px;
+ }
+ 
+ a{
+	 display:block;
+	 padding-bottom:25px;
+ }
