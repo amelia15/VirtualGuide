@@ -1,6 +1,5 @@
 {
   "type": "FeatureCollection",
-  "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
   "features": [
     { "type": "Feature", "properties": { "BUS_STOP_N": "28521", "BUS_ROOF_N": "B05", "LOC_DESC": "Центральний парк культури та відпочинку ім. М. Горького" }, "geometry": { "type": "Point", "coordinates": [ 50.0163036, 36.246709 ] } },
     { "type": "Feature", "properties": { "BUS_STOP_N": "21319", "BUS_ROOF_N": "B13", "LOC_DESC": "вулиця Сумська" }, "geometry": { "type": "Point", "coordinates": [ 50.21231608, 36.12991993 ] } },
@@ -30,6 +29,6 @@
 	{ "type": "Feature", "properties": { "BUS_STOP_N": "28651", "BUS_ROOF_N": "B01", "LOC_DESC": "Річка Лопань (Купецький міст)" }, "geometry": { "type": "Point", "coordinates": [ 49.9903943, 36.2262335 ] } },    
 	{ "type": "Feature", "properties": { "BUS_STOP_N": "58061", "BUS_ROOF_N": "B31", "LOC_DESC": "Свято-Благовіщенський кафедральний собор" }, "geometry": { "type": "Point", "coordinates": [49.990573, 36.2240397 ] } },
     { "type": "Feature", "properties": { "BUS_STOP_N": "70071", "BUS_ROOF_N": "B05", "LOC_DESC": "Сквер Стрілка" }, "geometry": { "type": "Point", "coordinates": [ 49.9858869, 36.2259096 ] } },
-    { "type": "Feature", "properties": { "BUS_STOP_N": "22271", "BUS_ROOF_N": "B01", "LOC_DESC": "Міст закоханих (Мар'їнський міст)" }, "geometry": { "type": "Point", "coordinates": [ 49.9848816, 36.2255299 ] } },
+    { "type": "Feature", "properties": { "BUS_STOP_N": "22271", "BUS_ROOF_N": "B01", "LOC_DESC": "Міст закоханих (Мар'їнський міст)" }, "geometry": { "type": "Point", "coordinates": [ 49.9848816, 36.2255299 ] } }
    ]
 }
