@@ -2,14 +2,14 @@
     var db = firebase.database();
   
     //получим нужный нам список в бд (по его ключу)
-    var listRef = db.ref('main_info_Kharkiv');
+    var listRef = db.ref('main');
    
 
    //добавление элемента в отображение
     function addItem(item) {
 	
         //cоздадим новый элемент списка с данными из аргумента (каждый item состоит из ключа и значения)
-        var newItem = '<div class="general_facts">'+item.val().general_facts+' </div>';
+        var newItem = '<div class="general_facts"><h2 class="name">'+item.val().name+' </h2><p>'+item.val().text+' </p></div>';
         //добавление элемента списка в список
         document.querySelector('.info').innerHTML += newItem;
     }
