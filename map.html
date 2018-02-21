@@ -42,7 +42,7 @@
 		 
         // Create the search box and link it to the UI element.
         var input = document.getElementById('pac-input');
-        var searchBox = new google.maps.places.SearchBox(input);
+       var searchBox = new google.maps.places.SearchBox(input);
         map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
         // Bias the SearchBox results towards current map's viewport.
@@ -103,17 +103,26 @@
 
 </head>
 <body>
-<div id="map-canvas"></div>
-<div class="location">
-			<p> <h2> Введіть своє місце положення: </h2> </p> 
-			<div class="box">
-				<div class="container-1">
-					<input id="pac-input" class="controls" type="text" placeholder="Пошук"/>
+	<div id="google_translate_element"></div>
+	<div id="map-canvas"></div>
+	<div class="location">
+		<p> <h2> Введіть своє місце положення: </h2> </p> 
+		<div class="box">
+			<div class="container-1">
+				<input id="pac-input" class="controls" type="text" placeholder="Пошук"/>
 					<!--<span class="icon"><i class="fa fa-search"></i></span>
 					<input type="search" id="search" placeholder="Пошук..." />-->
-				</div>
 			</div>
+		</div>
 				<!--<button class="way"> Храми Харкова </button>-->
-			</div>
+	</div>
+	
+	
+	<script type="text/javascript">
+	function googleTranslateElementInit() {
+		new google.translate.TranslateElement({pageLanguage: 'uk', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false,  gaTrack: true, gaId: 'UA-15081999'}, 'google_translate_element');
+	}
+	</script>
+	<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
