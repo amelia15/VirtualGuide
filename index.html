@@ -28,13 +28,20 @@
 	</div>
 	
 	<script>
+	/*window.onload = function(){
 		var elems = document.getElementsByClassName('name');
 		//el.onclick = function(){
 		//document.getElementById('name').onclick = function() {
 		//button = document.querySelector("button");
-		elems.addEventListener("click", function() {
-			document.querySelector(".text_info p").style="display:block;";
+		for(elem of elems){
+			elem.addEventListener("click", function() {
+				elem.querySelector(".text_info").style="display:block;";
 		  });
+		 }
+	}*/
+	function show(obj){
+		obj.parentNode.querySelector(".text_info").style="display:block;";
+	}
 	</script>
 	<script type="text/javascript">
 	function googleTranslateElementInit() {
