@@ -1,11 +1,11 @@
 body{
 	background-color: #18F427;
-	/*#00FA9A* #00FF7F*/
 }
 
 #google_translate_element{
 	margin-bottom: 15px;
 } 
+
 .container{
 	background-color: #228B22;
 	margin: auto;
@@ -76,42 +76,8 @@ figure:hover::after{
     padding: 5px 40px; /* Поля вокруг текста */
 	line-height:120%;
  }
- 
-/*.buttonsMain{
-	text-align: center;
-	margin-left: 40px;
-	margin:auto;
-	width: 95%;
-	height: 7%; 
-	background: #b5bdc8;
-    background: linear-gradient(to bottom, #F0FFF0 0%, #00FF00 100%);
-    font-size: 30px; 
-    padding: 30px 10px; 
-    color: #006400; 
-    border: 1px solid #006400; 
-    border-radius: 30px; 
-	margin-bottom: 30px;
-	line-height:20%;
-  }
   
- .buttonsMain:hover{
-	text-align: center;
-	margin-left: 27px;
-	width: 97%;
-	height: 7%; 
-	background: #b5bdc8;
-    background: linear-gradient(to top, #7FFFD4 0%, #00FF00 100%);
-    font-size: 35px; 
-    padding: 30px 10px; 
-    color: #006400; 
-    border: 4x solid #000080; 
-    border-radius: 30px; 
-	margin-bottom: 25px;
-	line-height:18%;
-  }*/
-  
-  
- #history_text {
+ .text_info {
 	text-align: center;
 	margin-left: 27px;
 	width: 97%;
@@ -123,11 +89,11 @@ figure:hover::after{
 	line-height:18%;
  }
  
- #history_text p{
+.text_info p{
 	 display: none;
  }
  
- #history_text: target p{
+.text_info: target p{
 	 display: block;
  }
  
@@ -158,7 +124,7 @@ figure:hover::after{
   color: white;
   box-shadow: 0 16px 32px 0 rgba(0,40,120,.35);
   transition: .5s;
-  padding-bottom:25px;
+  margin-bottom:25px;
 }
 .menuButton:hover {
   box-shadow: 0 0 0 0 rgba(0,40,120,0);
@@ -172,6 +138,10 @@ p, h2{
 	padding-right:20px;
 	text-align: justify;
 	text-shadow: 0px 0px 6px rgba(255,255,255,0.2);
+	
+    margin-top: 0.5em; /* Отступ сверху */
+    margin-bottom: 0.5em; /* Отступ снизу */
+   
 }
 
 h2{
@@ -181,7 +151,7 @@ h2{
                  10px 20px 5px rgba(0,0,0,0.05),
                  -10px 20px 5px rgba(0,0,0,0.05);
 
-
+	padding-bottom:20px;
 
 }
 
@@ -199,7 +169,8 @@ h2{
     color: #8B008B; /* Цвет текста */
     border: 1px solid black; /* Параметры рамки #006400*/
 	border-radius: 30px; /* Радиус скругления */
-	margin-bottom: 30px;
+	margin-bottom: 20px;
+	margin-top: 20px;
  }
   
 .name :hover{
@@ -215,26 +186,20 @@ h2{
 	
 	border: 2px inset #4B0082;  
 	
-	
-	/* border-top-radius: 30px; /* Радиус скругления
-    border-width: 2px;
-	border-style: dashed;
-    -webkit-border-image: 
-      -webkit-gradient(linear, 0 0, 0 100%, from(Navy), to(rgba(0, 0, 0, 0))) 1 100%;
-    -webkit-border-image: 
-      -webkit-linear-gradient(Navy, rgba(0, 0, 0, 0)) 1 100%;
-    -moz-border-image:
-      -moz-linear-gradient(Navy, rgba(0, 0, 0, 0)) 1 100%;    
-    -o-border-image:
-      -o-linear-gradient(Navy, rgba(0, 0, 0, 0)) 1 100%;
-    border-image:
-      linear-gradient(to bottom, Navy, rgba(0, 0, 0, 0)) 1 100%;*/
-	
    
 	margin-bottom: 25px;
  }
  
  a{
-	 display:block;
-	 padding-bottom:25px;
+	-webkit-box-shadow:rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+     -khtml-box-shadow:rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+       -moz-box-shadow:rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+         -o-box-shadow:rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+            box-shadow:rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  
+  }
+ 
+ .text_info p{
+	 display: 
  }
+ 
