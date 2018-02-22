@@ -9,7 +9,7 @@
     function addItem(item) {
 	
         //cоздадим новый элемент списка с данными из аргумента (каждый item состоит из ключа и значения)
-        var newItem = '<div class="general_facts"><h2 class="name">'+item.val().name+' </h2><p>'+item.val().text+' </p></div>';
+        var newItem = '<div class="general_facts"><div class="name" onclick="show(this)"> <h2>'+item.val().name+' </h2></div><div class="text_info">'+item.val().text+' </div></div>';
         //добавление элемента списка в список
         document.querySelector('.info').innerHTML += newItem;
     }
