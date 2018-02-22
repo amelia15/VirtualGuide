@@ -12,7 +12,7 @@
     { "type": "Feature", "properties": { "Question": "58061", "Answer": "B31",  "LOC_DESC": "Держпром" }, "geometry": { "type": "Point", "coordinates": [ 36.225868, 50.006959 ] } },
     { "type": "Feature", "properties": { "Question": "58061", "Answer": "B31",  "LOC_DESC": "Харьківский національний університет імені В. Н. Каразіна" }, "geometry": { "type": "Point", "coordinates": [ 36.228139, 50.004537 ] } },
     { "type": "Feature", "properties": { "Question": "58061", "Answer": "B31",  "LOC_DESC": "Міський сад ім. Шевченка" }, "geometry": { "type": "Point", "coordinates": [ 36.2315043, 50.0018258 ] } },
-    { "type": "Feature", "properties": { "Question": "58061", "Answer": "B31",  "LOC_DESC": "Пам'ятник Тарасові Шевченку" }, "geometry": { "type": "Point", "coordinates": [  36.10509794, 50.0011655, ] } },
+    { "type": "Feature", "properties": { "Question": "58061", "Answer": "B31",  "LOC_DESC": "Пам'ятник Тарасові Шевченку" }, "geometry": { "type": "Point", "coordinates": [  36.10509794, 50.0011655 ] } },
     { "type": "Feature", "properties": { "Question": "58061", "Answer": "B31",  "LOC_DESC": "Харківський національний академічний театр опери та балету імені Миколи Лисенка" }, "geometry": { "type": "Point", "coordinates": [36.232238, 49.99913 ] } },
     { "type": "Feature", "properties": { "Question": "58061", "Answer": "B31",  "LOC_DESC": "Дзеркальний струмінь" }, "geometry": { "type": "Point", "coordinates": [ 36.2344793, 49.9986911 ] } },    
     { "type": "Feature", "properties": { "Question": "58061", "Answer": "B31",  "LOC_DESC": "Храм Святих Жон-Мироносиць" }, "geometry": { "type": "Point", "coordinates": [ 36.2360354, 49.9985134 ] } },
