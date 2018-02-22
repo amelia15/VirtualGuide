@@ -1,14 +1,14 @@
 {
   "type": "FeatureCollection",
   "features": [
-	{ "type": "Feature", "properties": { "BUS_STOP_N": "58061", "BUS_ROOF_N": "B31", "LOC_DESC": "Храм Святих Жон-Мироносиць" }, "geometry": { "type": "Point", "coordinates": [ 49.9985134, 36.2360354 ] } },
-    { "type": "Feature", "properties": { "BUS_STOP_N": "70071", "BUS_ROOF_N": "B05", "LOC_DESC": "Римсько-католицька Церква Успіння Пріснодіви Марії" }, "geometry": { "type": "Point", "coordinates": [ 49.996459, 36.235263 ] } },
-    { "type": "Feature", "properties": { "BUS_STOP_N": "22271", "BUS_ROOF_N": "B01", "LOC_DESC": "Свято-Покровський чоловічий монастир" }, "geometry": { "type": "Point", "coordinates": [ 49.9919827, 36.2298332 ] } },
+	{ "type": "Feature", "properties": { "BUS_STOP_N": "58061", "BUS_ROOF_N": "B31", "LOC_DESC": "Храм Святих Жон-Мироносиць" }, "geometry": { "type": "Point", "coordinates": [ 36.2360354,  49.9985134] } },
+    { "type": "Feature", "properties": { "BUS_STOP_N": "70071", "BUS_ROOF_N": "B05", "LOC_DESC": "Римсько-католицька Церква Успіння Пріснодіви Марії" }, "geometry": { "type": "Point", "coordinates": [ 36.235263, 49.996459 ] } },
+    { "type": "Feature", "properties": { "BUS_STOP_N": "22271", "BUS_ROOF_N": "B01", "LOC_DESC": "Свято-Покровський чоловічий монастир" }, "geometry": { "type": "Point", "coordinates": [ 36.2298332, 49.9919827 ] } },
     { "type": "Feature", "properties": { "BUS_STOP_N": "01013", "BUS_ROOF_N": "B05", "LOC_DESC": "Успенський собор" }, "geometry": { "type": "Point", "coordinates": [49.98991,36.230693 ] } },
-	{ "type": "Feature", "properties": { "BUS_STOP_N": "58061", "BUS_ROOF_N": "B31", "LOC_DESC": "Свято-Благовіщенський кафедральний собор" }, "geometry": { "type": "Point", "coordinates": [49.990573, 36.2240397 ] } },
-    { "type": "Feature", "properties": { "BUS_STOP_N": "58061", "BUS_ROOF_N": "B31", "LOC_DESC": "Свято-Трисвятительский (Гольдбергівський) храм" }, "geometry": { "type": "Point", "coordinates": [ 49.9745075, 36.2293124 ] } },
-    { "type": "Feature", "properties": { "BUS_STOP_N": "70071", "BUS_ROOF_N": "B05", "LOC_DESC": "МЕЧЕТЬ АЛЬ-БАРОКЯТ" }, "geometry": { "type": "Point", "coordinates": [ 49.9751485, 36.2323662 ] } },
-    { "type": "Feature", "properties": { "BUS_STOP_N": "22271", "BUS_ROOF_N": "B01", "LOC_DESC": "Єврейська хоральна синагога" }, "geometry": { "type": "Point", "coordinates": [ 49.9919827, 36.2298332 ] } },
-    { "type": "Feature", "properties": { "BUS_STOP_N": "01013", "BUS_ROOF_N": "B05", "LOC_DESC": "Петропавловський храм" }, "geometry": { "type": "Point", "coordinates": [50.0012183, 36.2622102 ] } }
+	{ "type": "Feature", "properties": { "BUS_STOP_N": "58061", "BUS_ROOF_N": "B31", "LOC_DESC": "Свято-Благовіщенський кафедральний собор" }, "geometry": { "type": "Point", "coordinates": [36.2240397, 49.990573 ] } },
+    { "type": "Feature", "properties": { "BUS_STOP_N": "58061", "BUS_ROOF_N": "B31", "LOC_DESC": "Свято-Трисвятительский (Гольдбергівський) храм" }, "geometry": { "type": "Point", "coordinates": [ 36.2293124, 49.9745075 ] } },
+    { "type": "Feature", "properties": { "BUS_STOP_N": "70071", "BUS_ROOF_N": "B05", "LOC_DESC": "МЕЧЕТЬ АЛЬ-БАРОКЯТ" }, "geometry": { "type": "Point", "coordinates": [ 36.2323662, 49.9751485 ] } },
+    { "type": "Feature", "properties": { "BUS_STOP_N": "22271", "BUS_ROOF_N": "B01", "LOC_DESC": "Єврейська хоральна синагога" }, "geometry": { "type": "Point", "coordinates": [ 36.2298332, 49.9919827 ] } },
+    { "type": "Feature", "properties": { "BUS_STOP_N": "01013", "BUS_ROOF_N": "B05", "LOC_DESC": "Петропавловський храм" }, "geometry": { "type": "Point", "coordinates": [ 36.2622102, 50.0012183 ] } }
 	]
 }
