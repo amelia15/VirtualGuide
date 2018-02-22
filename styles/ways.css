@@ -13,8 +13,9 @@ body{
 	width: 95%;
 	margin-bottom: 20px;
 	margin-top: 20px;
-	text-align: middle;
+	text-align: center;
 	border: 5px dotted #006400;
+	padding:10px;
 }
 
 p, h2{
@@ -118,8 +119,10 @@ h2{
   text-decoration: none;
   /*outline: none;*/
   display: inline-block;
+  /*padding: 12px 40px;
+  padding-bottom:25px;*/
+  vertical-align: middle;
   padding: 12px 40px;
-  padding-bottom:25px;
   margin: auto;
    border: 1px solid black;
   border-radius: 30px;
