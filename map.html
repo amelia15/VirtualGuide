@@ -47,7 +47,7 @@
                 var name = event.feature.getProperty("LOC_DESC");
                 var pos = event.feature.getGeometry().get();
 		var question = event.feature.getProperty("Question");
-		infowindow.setContent("<strong>"+name+"</strong><br/>"+question); //можно вставить вопросы из json!!!!!
+		infowindow.setContent("<strong>"+name+"</strong><br/><br/>"+question); //можно вставить вопросы из json!!!!!
                 infowindow.setPosition(pos);
                 infowindow.setOptions({pixelOffset: new google.maps.Size(0,-30)});
                 infowindow.open(map);
@@ -58,7 +58,7 @@
                 var pos = event.feature.getGeometry().get();
 		var question = event.feature.getProperty("Question");
 		var answer = event.feature.getProperty("Answer");
-		infowindow.setContent("<strong>"+name+"</strong><br/>"+question+"<br/><em>" + answer+"</em"); //можно вставить вопросы из json!!!!!
+		infowindow.setContent("<strong>"+name+"</strong><br/><br/>"+question+"<br/><br/><em>" + answer+"</em"); //можно вставить вопросы из json!!!!!
                 infowindow.setPosition(pos);
                 infowindow.setOptions({pixelOffset: new google.maps.Size(0,-30)});
                 infowindow.open(map);
