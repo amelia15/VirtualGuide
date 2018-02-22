@@ -1,0 +1,12 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{ "type": "Feature", "properties": { "Question": "Який напрям мистецтва демонструє ця галерея?", "Answer": "Сучасне.", "LOC_DESC": "Come in art gallery" }, "geometry": { "type": "Point", "coordinates": [ 36.2247821,  50.0102238] } },
+    { "type": "Feature", "properties": { "Question": "Що цікавого знаходиться в одній будівлі з галереєю, пов'язано з містом-побратимом Харкова?", "Answer": "Дім Нюрнберга.", "LOC_DESC": "Харківська муніципальна галерея" }, "geometry": { "type": "Point", "coordinates": [ 36.236583, 49.998365 ] } },
+    { "type": "Feature", "properties": { "Question": "Як називаються скульптури, що стоять біля входу в галерею?", "Answer": "«Віолончельний концерт» і «Сімейство при справі».", "LOC_DESC": "Галерея АВЕК" }, "geometry": { "type": "Point", "coordinates": [ 36.237159, 50.005207 ] } },
+    { "type": "Feature", "properties": { "Question": "Як називається будівля, в якій знаходиться галерея?", "Answer": "Держпром", "LOC_DESC": "Обласна художня галерея «Миcтецтво Слобожанщини»." }, "geometry": { "type": "Point", "coordinates": [36.2269117,50.0063218 ] } },
+	{ "type": "Feature", "properties": { "Question": "З якими видами мистецтва пов'язана будівля, в якій знаходиться галерея?", "Answer": "Театральне, балет, опера.", "LOC_DESC": "Інформаційно-виставковий ценр (галерея) «Бузок»." }, "geometry": { "type": "Point", "coordinates": [36.2331406, 49.9993567 ] } },
+    { "type": "Feature", "properties": { "Question": "Скільки поверхів займає центр?", "Answer": "Два", "LOC_DESC": "Центр сучасного мистецтва «ЕрміловЦентр»" }, "geometry": { "type": "Point", "coordinates": [ 36.2264639, 50.0047382 ] } },
+    { "type": "Feature", "properties": { "Question": "Чому галерея носить таке ім'я?", "Answer": "Бо знаходиться в торгово-розважальному центрі «PALLADIUM».", "LOC_DESC": "Галерея «PALLADIUM»" }, "geometry": { "type": "Point", "coordinates": [ 36.233325, 49.988258 ] } }
+    ]
+}
