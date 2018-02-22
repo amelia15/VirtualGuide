@@ -44,14 +44,27 @@
             var infowindow = new google.maps.InfoWindow();
             // When the user clicks, open an infowindow
             map.data.addListener('click', function(event) {
-                //var id = event.feature.getProperty("BUS_STOP_N");
                 var name = event.feature.getProperty("LOC_DESC");
                 var pos = event.feature.getGeometry().get();
-                infowindow.setContent("<strong>"+name+"</strong><br/>Вопрос"); //можно вставить вопросы из json!!!!!
+		var question = event.feature.getProperty("Question");
+		infowindow.setContent("<strong>"+name+"</strong><br/>"+question); //можно вставить вопросы из json!!!!!
                 infowindow.setPosition(pos);
                 infowindow.setOptions({pixelOffset: new google.maps.Size(0,-30)});
                 infowindow.open(map);
             });
+		
+	   map.data.addListener('rightclick', function(event) {
+                var name = event.feature.getProperty("LOC_DESC");
+                var pos = event.feature.getGeometry().get();
+		var question = event.feature.getProperty("Question");
+		var answer = event.feature.getProperty("Answer");
+		infowindow.setContent("<strong>"+name+"</strong><br/>"+question+"<br/>" + answer); //можно вставить вопросы из json!!!!!
+                infowindow.setPosition(pos);
+                infowindow.setOptions({pixelOffset: new google.maps.Size(0,-30)});
+                infowindow.open(map);
+            });
+		
+		
 			
 			// Create the search box and link it to the UI element.
         var input = document.getElementById('pac-input');
