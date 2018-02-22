@@ -22,40 +22,20 @@
 			<h1 class="appName">Віртуальний екскурсовод</h1>
 			<h1 class="cityName">Харків</h1>
 			<figure data-title="Герб Ха́ркова був затверджений 14 вересня 1995 року рішенням Харківської міської ради.   Зелений колір у геральдиці символізує надію, радість, достаток. Ріг достатку символізує природні багатства. Кадуцей — незмінний атрибут бога Меркурія, який в епоху античності вважався заступником торговців, мандрівників, парламентерів. Змії, що оповили кадуцей, символізують мудрість." > <img src="images/герб_!.png" alt="coat of arms" /> <figcaption> Герб Харкова <figcaption></figure>
-			<!--<p class="general_info">  Харків – найбільше місто Східної України та друге за кількістю мешканців місто у державі. Його вважають столицею Слобожанщини. Місцеві мешканці також пишаються, що місто колись було столицею радянської України (з 19 грудня 1919 по 24 червня 1934 рр). Саме тому його часто називають "першою столицею".
-			</p>
-			<p class="general_info">  Ха́рків є великий науковим, культурним, промисловим і транспортним осередком України та адміністративним центром Харківської області. Його населення нараховує близько півтора мільйона осіб, площа міста — 350 км². 
-			</p>
-			<p class="general_info">  Під час СРСР він був третім індустріальним центром у країні після Москви та Ленінграда. Важливу роль у місті має й культурний розвиток: тут знаходиться велика кількість музеїв, картинних галерей, державних і недержавних театрів , філармонія, більше 80 бібліотек.
-			</p>
-			<p class="general_info">  Крім цього, місто є найбільш "освіченим" в країні. Його часто називають «студентською стоицею» України, бо тут функціонує 142 дослідні інститути і 45 вузів, в яких навчається не менше 220 тисяч студентів.
-			</p>
-			<p class="general_info">  Харків – єдине місто в Україні, що володіє повним комплектом нагород Ради Європи: Дипломом, Почесним Прапором, Таблицею Європи і Призом Європи.
-			</p>
-			<p class="general_info">  Харків – місто порівняно молоде. Його вік становить трохи більше 360 років (статус міста був отриманий у 1654 році). Попри це, місто є одним із найцікавіших в Україні. Сьогодні місто змінюється і багатьох мандрівників приємно дивує. 
-			</p>-->
 		</div>
-		<div class="info">
-			<!--<div class="text"> </div>
-			<div class="history">
-			<button class="buttonsMain"> Історія Харкова </button>
-			<div id="history_text"> <p> Test </p> </div>
-			
-		<button class="buttonsMain" id="history_click"> Історія Харкова </button>
-	
-		</div>
-		</div>
-		<div class="facts">
-			<button class="buttonsMain"> Цікаві факти </button>-->
-		</div>
+		<div class="info"> 	</div>
 			<a href="way_KP.html" class="menuButton" id="next"> Маршрути </a>
 	</div>
+	
 	<script>
-	var el = document.getElementById("history_click");
-	el.onclick = function(){
-		document.querySelector("#history_text p").style="display:block;";
-	}
-  </script>
+		var elems = document.getElementsByClassName('name');
+		//el.onclick = function(){
+		//document.getElementById('name').onclick = function() {
+		//button = document.querySelector("button");
+		elems.addEventListener("click", function() {
+			document.querySelector(".text_info p").style="display:block;";
+		  });
+	</script>
 	<script type="text/javascript">
 	function googleTranslateElementInit() {
 		new google.translate.TranslateElement({pageLanguage: 'uk', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false,  gaTrack: true, gaId: 'UA-15081999'}, 'google_translate_element');
