@@ -36,6 +36,10 @@
                     map.setZoom(16);
                 });
             }
+		map.data.setStyle({
+		  fillColor: 'green',
+		  strokeWeight: 1
+		});
             // global infowindow
             var infowindow = new google.maps.InfoWindow();
             // When the user clicks, open an infowindow
@@ -73,12 +77,8 @@
           markers.forEach(function(marker) {
             marker.setMap(null);
           });
+		
           markers = [];
-		  
-		  map.data.setStyle({
-  fillColor: 'green',
-  strokeWeight: 1
-});
 
           // For each place, get the icon, name and location.
           var bounds = new google.maps.LatLngBounds();
