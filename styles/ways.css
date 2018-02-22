@@ -118,7 +118,7 @@ h2{
 .menuButton {
   text-decoration: none;
   /*outline: none;*/
-  display: inline-block;
+  display: block;
   /*padding: 12px 40px;
   padding-bottom:25px;*/
   vertical-align: middle;
