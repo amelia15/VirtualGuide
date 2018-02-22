@@ -28,19 +28,15 @@
 	</div>
 	
 	<script>
-	/*window.onload = function(){
-		var elems = document.getElementsByClassName('name');
-		//el.onclick = function(){
-		//document.getElementById('name').onclick = function() {
-		//button = document.querySelector("button");
-		for(elem of elems){
-			elem.addEventListener("click", function() {
-				elem.querySelector(".text_info").style="display:block;";
-		  });
-		 }
-	}*/
+	
 	function show(obj){
-		obj.parentNode.querySelector(".text_info").style="display:block;";
+		var elem = obj.parentNode.querySelector(".text_info");
+		var curStyle = elem.style;
+		if (curStyle.display=="none" || curStyle.display == ""){
+			elem.style="display:block;";
+		}else{
+			elem.style="display:none;";
+		}
 	}
 	</script>
 	<script type="text/javascript">
