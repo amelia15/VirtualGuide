@@ -22,12 +22,12 @@
     { "type": "Feature", "properties": { "BUS_STOP_N": "28651", "BUS_ROOF_N": "B01", "LOC_DESC": "Градусник" }, "geometry": { "type": "Point", "coordinates": [  36.231871, 49.993280 ] } },    
 	{ "type": "Feature", "properties": { "BUS_STOP_N": "28651", "BUS_ROOF_N": "B01", "LOC_DESC": "Харківський історичний музей" }, "geometry": { "type": "Point", "coordinates": [ 36.2328686, 49.9913109 ] } },    
 	{ "type": "Feature", "properties": { "BUS_STOP_N": "58061", "BUS_ROOF_N": "B31", "LOC_DESC": "Пам'ятник незалежності Україна, що летить" }, "geometry": { "type": "Point", "coordinates": [ 36.2328686, 49.9913109 ] } },
-    { "type": "Feature", "properties": { "BUS_STOP_N": "70071", "BUS_ROOF_N": "B05", "LOC_DESC": "Майдан Конституції" }, "geometry": { "type": "Point", "coordinates": [ 36.2324936. 49.9911851 ] } },
+    { "type": "Feature", "properties": { "BUS_STOP_N": "70071", "BUS_ROOF_N": "B05", "LOC_DESC": "Майдан Конституції" }, "geometry": { "type": "Point", "coordinates": [ 36.2324936, 49.9911851 ] } },
     { "type": "Feature", "properties": { "BUS_STOP_N": "22271", "BUS_ROOF_N": "B01", "LOC_DESC": "Свято-Покровський чоловічий монастир" }, "geometry": { "type": "Point", "coordinates": [ 36.2298332, 49.9919827 ] } },
     { "type": "Feature", "properties": { "BUS_STOP_N": "01013", "BUS_ROOF_N": "B05", "LOC_DESC": "Успенський собор" }, "geometry": { "type": "Point", "coordinates": [ 36.230693, 49.98991 ] } },
     { "type": "Feature", "properties": { "BUS_STOP_N": "28651", "BUS_ROOF_N": "B01", "LOC_DESC": "Університетська гірка" }, "geometry": { "type": "Point", "coordinates": [ 36.2293669, 49.990863 ] } },    
 	{ "type": "Feature", "properties": { "BUS_STOP_N": "28651", "BUS_ROOF_N": "B01", "LOC_DESC": "Річка Лопань (Купецький міст)" }, "geometry": { "type": "Point", "coordinates": [ 36.2262335, 49.9903943 ] } },    
-	{ "type": "Feature", "properties": { "BUS_STOP_N": "58061", "BUS_ROOF_N": "B31", "LOC_DESC": "Свято-Благовіщенський кафедральний собор" }, "geometry": { "type": "Point", "coordinates": [ 36.2240397,49.990573 ] } },
+	{ "type": "Feature", "properties": { "BUS_STOP_N": "58061", "BUS_ROOF_N": "B31", "LOC_DESC": "Свято-Благовіщенський кафедральний собор" }, "geometry": { "type": "Point", "coordinates": [ 36.2240397, 49.990573 ] } },
     { "type": "Feature", "properties": { "BUS_STOP_N": "70071", "BUS_ROOF_N": "B05", "LOC_DESC": "Сквер Стрілка" }, "geometry": { "type": "Point", "coordinates": [ 36.2259096, 49.9858869 ] } },
     { "type": "Feature", "properties": { "BUS_STOP_N": "22271", "BUS_ROOF_N": "B01", "LOC_DESC": "Міст закоханих (Мар'їнський міст)" }, "geometry": { "type": "Point", "coordinates": [ 36.2255299, 49.9848816 ] } }
    ]
