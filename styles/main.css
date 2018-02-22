@@ -77,25 +77,14 @@ figure:hover::after{
 	line-height:120%;
  }
   
- .text_info {
-	text-align: center;
-	margin-left: 27px;
-	width: 97%;
-	height: 7%; 
-	font-size: 35px; /* Размер шрифта */
-    padding: 30px 10px; /* Поля вокруг текста */
-    color: #006400; /* Цвет текста */
-   	margin-bottom: 25px;
-	line-height:18%;
- }
  
-.text_info p{
+/*.text_info p{
 	 display: none;
  }
  
 .text_info: target p{
 	 display: block;
- }
+ }*/
  
  button:hover, .menuButton:hover{
 	-webkit-box-shadow:rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
@@ -132,7 +121,7 @@ figure:hover::after{
   border: 2px inset #4B0082; 
 }
 
-p, h2{
+p, h2 {
 	text-indent: 40px;
 	padding-left:20px;
 	padding-right:20px;
@@ -155,40 +144,39 @@ h2{
 
 }
 
-.name {
+.name {	
 	vertical-align: middle;
 	text-decoration:none;
 	display:block;
 	margin:auto;
 	/*margin-left: 40px;*/
 	width: 93%;
-	height: 6%; 
+	height: 5%; 
 	background: linear-gradient(to bottom, #00FF7F 0%, #00FF00 100%);
     font-size: 25px; /* Размер шрифта */
     /*padding: 10px; /* Поля вокруг текста */
     color: #8B008B; /* Цвет текста */
     border: 1px solid black; /* Параметры рамки #006400*/
 	border-radius: 30px; /* Радиус скругления */
-	margin-bottom: 20px;
-	margin-top: 20px;
+	margin-bottom: 30px;
  }
-  
-.name :hover{
-	width: 94%;
-	height: 6%; 
-	/*margin-left: 35px;*/
-	
-	background: linear-gradient(to top, #00BFFF 20%, #00FF00 80%);
-    font-size: 27px; /* Размер шрифта */
-    /*padding: 30px 10px; /* Поля вокруг текста */
+ .name:hover{
+	vertical-align: middle;
+	text-decoration:none;
+	display:block;
+	margin:auto;
+	/*margin-left: 40px;*/
+	width: 93%;
+	height: 5%; 
+	background: linear-gradient(to top, #00BFFF 0%, #00FF00 100%);
+    font-size: 28px; /* Размер шрифта */
+    /*padding: 10px; /* Поля вокруг текста */
     color: #8B008B; /* Цвет текста */
-    /*border: 3px dashed #0000CD;*/
-	
-	border: 2px inset #4B0082;  
-	
-   
-	margin-bottom: 25px;
+    border: 1px solid black; /* Параметры рамки #006400*/
+	border-radius: 30px; /* Радиус скругления */
+	margin-bottom: 30px;
  }
+
  
  a{
 	-webkit-box-shadow:rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
@@ -199,7 +187,7 @@ h2{
   
   }
  
- .text_info p{
-	 display: 
+ .text_info{
+	 display: none;
  }
  
