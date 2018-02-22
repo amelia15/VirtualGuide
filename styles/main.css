@@ -96,17 +96,17 @@ figure:hover::after{
    	 vertical-align: middle;
    	 padding: 12px 40px;
    	 margin: auto;
-  	  border: 1px solid black;
-  	  border-radius: 30px;
-  	  background-image: linear-gradient(45deg, #6ab1d7 0%, #33d9de 50%, #191970 100%);
+  	 border: 1px solid black;
+  	 border-radius: 30px;
+  	 background-image: linear-gradient(45deg, #6ab1d7 0%, #33d9de 50%, #191970 100%);
    	 background-position: 100% 0;
    	 background-size: 200% 200%;
    	 font-family: 'Montserrat', sans-serif;
    	 font-size: 24px;
-  	  font-weight: 300;
-    	color: white;
+  	 font-weight: 300;
+    	 color: white;
    	 box-shadow: 0 16px 32px 0 rgba(0,40,120,.35);
-  	  transition: .5s;
+  	 transition: .5s;
  }
  
 .menuButton:hover {
@@ -121,8 +121,8 @@ p, h2 {
 	padding-right: 20px;
 	text-align: justify;
 	text-shadow: 0px 0px 6px rgba(255,255,255,0.2);
-	margin-top: 0.5em; /* Отступ сверху */
-   	 margin-bottom: 0.5em; /* Отступ снизу */
+	margin-top: 0.5em; 
+   	margin-bottom: 0.5em; /* Отступ снизу */
  }
 
 h2{
