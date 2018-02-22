@@ -4,7 +4,7 @@
 	{ "type": "Feature", "properties": { "Question": "58061", "Answer": "B31", "LOC_DESC": "Храм Святих Жон-Мироносиць" }, "geometry": { "type": "Point", "coordinates": [ 36.2360354,  49.9985134] } },
     { "type": "Feature", "properties": { "Question": "70071", "Answer": "B05", "LOC_DESC": "Римсько-католицька Церква Успіння Пріснодіви Марії" }, "geometry": { "type": "Point", "coordinates": [ 36.235263, 49.996459 ] } },
     { "type": "Feature", "properties": { "Question": "22271", "Answer": "B01", "LOC_DESC": "Свято-Покровський чоловічий монастир" }, "geometry": { "type": "Point", "coordinates": [ 36.2298332, 49.9919827 ] } },
-    { "type": "Feature", "properties": { "Question": "01013", "Answer": "B05", "LOC_DESC": "Успенський собор" }, "geometry": { "type": "Point", "coordinates": [49.98991,36.230693 ] } },
+    { "type": "Feature", "properties": { "Question": "01013", "Answer": "B05", "LOC_DESC": "Успенський собор" }, "geometry": { "type": "Point", "coordinates": [ 36.230693, 49.98991 ] } },
 	{ "type": "Feature", "properties": { "Question": "З якого матеріалу виготовлений іконостас усередині собору?", "Answer": "Білий мармур.", "LOC_DESC": "Свято-Благовіщенський кафедральний собор" }, "geometry": { "type": "Point", "coordinates": [36.2240397, 49.990573 ] } },
     { "type": "Feature", "properties": { "Question": "58061", "Answer": "B31", "LOC_DESC": "Свято-Трисвятительский (Гольдбергівський) храм" }, "geometry": { "type": "Point", "coordinates": [ 36.2293124, 49.9745075 ] } },
     { "type": "Feature", "properties": { "Question": "70071", "Answer": "B05", "LOC_DESC": "МЕЧЕТЬ АЛЬ-БАРОКЯТ" }, "geometry": { "type": "Point", "coordinates": [ 36.2323662, 49.9751485 ] } },
