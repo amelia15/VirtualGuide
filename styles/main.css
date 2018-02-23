@@ -61,10 +61,10 @@ img{
 figure:hover::after{
 	content: attr(data-title); /* Выводим текст */
    	position: absolute; /* Абсолютное позиционирование */
-	left: 800px;
-	top: 300px; /* Положение подсказки */
+	left: 850px;
+	top: 500px; /* Положение подсказки */
    	z-index: 1; /* Отображаем подсказку поверх других элементов */
-   	background: rgba(111,245,158,0.65); /* Полупрозрачный цвет фона */
+   	background: rgba(111,245,158,0.7); /* Полупрозрачный цвет фона */
    	font-family: Arial, sans-serif; /* Гарнитура шрифта */
    	font-size: 14px; /* Размер текста подсказки */
    	padding: 5px 10px; /* Поля */
