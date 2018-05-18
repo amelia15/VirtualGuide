@@ -41,7 +41,7 @@ page.post.onchange();
 document.getElementById('public').onclick = function(){
 	 db.ref(`main/`+page.post.value).set({
 		name: document.getElementById("post_name").value,
-		desc: tinymce.get('post_text').getContent(),
+		text: tinymce.get('post_text').getContent(),
 		/*sights: document.getElementById('sights').value*/
   });
 }
