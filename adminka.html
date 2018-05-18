@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Virtual_guide</title>
+   <link rel="stylesheet" href="adminka_styles.css"/> 
+ <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script> 
+   <script>
+        //инициализация Firebase - подставьте свои значения
+        var config = {
+            apiKey: "AIzaSyAjEt56_U19qrSVbi0y80eLA_3Hob-YCxg",
+            databaseURL: "https://choose-way.firebaseio.com/"
+        };
+        firebase.initializeApp(config);
+    </script>	
+	<script src='https://cloud.tinymce.com/stable/tinymce.min.js'></script>
+  <script>
+  tinymce.init({
+    selector: '#post_text',
+	height: "500"
+  });
+  </script>
+</head>
+
+<body>    
+	<div>
+	<nav class="top-menu">
+	<ul class="menu-main">
+		<li><a href="adminka.html" class="current">Редагування головної сторінки</a></li>
+		<li><a href="adminka_way.html">Редагування сторінки з маршрутами</a></li>
+		<li><a href="adminka_comments.html">Редагування коментарів</a></li>
+	</ul>
+	</nav>
+		<h2> Оберіть назву поста для редагування: </h2> 
+		<form>
+			<p><select size="1" name="post_type" id="post_type">
+				<option value="city_name" id="city_name" selected>city_name_info</option></select></p>
+				<!--<option value="general" id="general">general_info</option>
+				<option value="history" id="history">history_info</option>
+				<option value="interesting" id="interesting">interesting_info</option>
+				<option value="symbols" id="symbols">symbols_info</option>
+			</select></p>
+		</form>-->
+	
+	
+			<br/><p><input placeholder="Назва поста" name="post_name" id="post_name"/></p>
+			<p><textarea placeholder="Зміст поста" name="post_text" id="post_text"></textarea> </p>
+		</form>
+		
+		<!--<input type="submit" value="Опублікувати" id="public"/>
+		<input type="submit" value="Видалити" id="delete"/>-->
+		<span id="public" class="button pubico">Опублікувати</span>
+		<span id="delete" class="button delico">Видалити</span>
+	</div>
+	
+	
+	
+	<script type="text/javascript">
+	function googleTranslateElementInit() {
+		new google.translate.TranslateElement({pageLanguage: 'uk', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false,  gaTrack: true, gaId: 'UA-15081999'}, 'google_translate_element');
+	}
+	</script>
+	<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	<script src="admin.js"></script>
+</body>
+</html>
