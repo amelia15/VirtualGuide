@@ -18,14 +18,25 @@ const page = {
               }
     },
     createOptions: function(item){
-		this.post.innerHTML = "<option selected>Оберіть назву поста</option>";
+		this.post.innerHTML = "<option value='add_new' selected>Додати новий пост</option>";
         for (let i in item){
             this.post.innerHTML+= `<option value="${i}">${item[i].name}</option>`;
+			
         }
+		/*listRef = db.ref(`main/symbols_info`);*/
     }
 };
 
 page.post.onchange = function(){
+	document.getElementById("post_name").value = "";
+	try {
+		tinymce.get('post_text').setContent("");
+	}
+	catch(e) 
+	{
+		console.log('no mce');
+	}
+	
 	page.ref = db.ref(`main/`+page.post.value);
 	page.ref.on('child_added', function (data) {
     page.show(data);
@@ -39,11 +50,17 @@ page.post.onchange = function(){
 page.post.onchange();
 
 document.getElementById('public').onclick = function(){
-	 db.ref(`main/`+page.post.value).set({
+	var tmp={
 		name: document.getElementById("post_name").value,
-		text: tinymce.get('post_text').getContent(),
-		/*sights: document.getElementById('sights').value*/
-  });
+		text: tinymce.get("post_text").getContent(),
+	  };
+	if (page.post.value=='add_new') {
+		var newPost = db.ref('main').push();
+		newPost.set(tmp);
+	}
+	else {
+		db.ref(`main/`+page.post.value).set(tmp);
+	}
 }
 
 document.getElementById("delete").onclick = function(){
@@ -51,6 +68,16 @@ document.getElementById("delete").onclick = function(){
 	 page.ref.on('child_removed', function (data) {
 		page.show(data);
 	});
+	/*setTimeout( , 2000);*/
+
+	document.getElementById("post_name").value = "";
+	try {
+		tinymce.get('post_text').setContent("");
+	}
+	catch(e) 
+	{
+		console.log('no mce');
+	}
 } 
 
 let main1 = db.ref('main');
