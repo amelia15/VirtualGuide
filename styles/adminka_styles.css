@@ -190,4 +190,23 @@ content: "\2718";
 .menu-main:after {content: none;}
 .menu-main a {display: block;}
 }
+ .comm_block {
+	background-color:#91bba1;
+	margin-left:10px;
+	margin:auto;
+	padding:10px 10px 10px 10px;
+	border: 2px solid #1e311e;
+	margin-bottom:10px;
+}
  
+h2{
+	text-align: left;
+}
+
+.commText{
+	font-size: 17px; 
+}
+
+.buttonDel{
+	padding-left:600px;
+}
