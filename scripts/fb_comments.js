@@ -42,7 +42,7 @@
     function addItem(item) {
 	
         //cоздадим новый элемент списка с данными из аргумента (каждый item состоит из ключа и значения)
-        var newItem = '<div 1class="comBlok"><h1>'+item.val().name+'</h1><p>'+item.val().text+' </p></div>';
+        var newItem = '<div 1class="comBlok" class="comText" ><h1>'+item.val().name+'</h1><p>'+item.val().text+' </p></div>';
         //добавление элемента списка в список
         document.querySelector('.com_field').innerHTML += newItem;
     }
@@ -57,10 +57,23 @@
         changeItem(data);
     });*/
 	
-	document.getElementById('comment').onclick = function(){
+	/*function func() {
+		alert( 'Ваш коментар додано!' );
+	}*/
+	
+	document.getElementById('public').onclick = function(){
 	 var newComment = listRef.push();
 	 newComment.set({
 		name: document.getElementById("author").value,
 		text: document.getElementById("text").value,
 	  });
+	  document.querySelector('.com_field').innerHTML = "";
+	  document.getElementById("author").value = "";
+	  document.getElementById("text").value = "";
+	  listRef.on('child_added', function (data) {
+       addItem(data);
+	//setTimeout(func, 1000);
+    });
+	  //document.querySelector('.com_field').innerHTML = "";
+	  //addItem(data);
 }
