@@ -175,3 +175,9 @@ h2{
  .text_info{
 	 display: none;
  }
+
+ span{
+	 text-indent: 85px;
+	 font-size: 35px;
+	 color: #4B0082;
+ }
