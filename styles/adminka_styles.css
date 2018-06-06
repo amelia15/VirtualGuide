@@ -2,18 +2,12 @@ body{
 	background-color: #ebfbeb;
 }
 
-#google_translate_element{
-	margin-bottom: 15px;
-} 
-
 h1{
 	text-align: center;
 }
 
 #way_name, #sights, #post_name{
-	
-   width: 100%; 
-   
+	width: 100%; 
 }
  
 #sights{
@@ -26,7 +20,8 @@ select{
    	font-size: 15px; 
 }
 
-#public, #delete {
+#public, #delete, .delete{
+	cursor: default;
 display: inline-block;
 white-space: nowrap;
 background-color: #ccc;
@@ -50,10 +45,9 @@ border-radius: .2em;
 -moz-box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.3);
 -webkit-box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.3);
 box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.3);
-cursor:pointer;
 }
  
-#public:hover, #delete:hover, .button:hover
+#public:hover, #delete:hover, .button:hover , .delete:hover
 {
 background-color: #ddd;
 background-image: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#ddd));
@@ -65,7 +59,7 @@ background-image: linear-gradient(top, #fafafa, #ddd);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fafafa', EndColorStr='#dddddd');
 }
  
-#public:active, #delete:active, span:active
+#public:active, #delete:active, span:active, .delete:active
 {
 -moz-box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
 -webkit-box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
@@ -74,13 +68,13 @@ position: relative;
 top: 1px;
 }
  
-#public:focus, #delete:focus
+#public:focus, #delete:focus, .delete:focus
 {
 outline: 0;
 background: #fafafa;
 } 
  
-#public:before, #delete:before, span:before
+#public:before, #delete:before, span:before, .delete:before
 {
 background: #ccc;
 background: rgba(0,0,0,.1);
@@ -102,7 +96,7 @@ border-radius: .15em 0 0 .15em;
  
 
  
-#delete:before, span.delico:before
+#delete:before, span.delico:before,  .delete:before
 {
 content: "\2718";
 }
@@ -190,7 +184,8 @@ content: "\2718";
 .menu-main:after {content: none;}
 .menu-main a {display: block;}
 }
- .comm_block {
+
+.comm_block {
 	background-color:#91bba1;
 	margin-left:10px;
 	margin:auto;
