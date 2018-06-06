@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Virtual_guide</title>
+   <!--<link rel="stylesheet" href="adminka_styles.css"/> -->
+   <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
+   <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script> 
+   <script>
+        //инициализация Firebase - подставьте свои значения
+        var config = {
+            apiKey: "AIzaSyAjEt56_U19qrSVbi0y80eLA_3Hob-YCxg",
+            databaseURL: "https://choose-way.firebaseio.com/"
+        };
+        firebase.initializeApp(config);
+    </script>
+	
+
+  </style>
+<script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
+
+</head>
+<body>
+<!--<h1>Вхід в панель адміністратора</h1>-->
+<div id="firebaseui-auth-container"></div>
+<div id="loader">Loading...</div>
+<script>
+	var ui = new firebaseui.auth.AuthUI(firebase.auth());
+	var uiConfig = {
+		signInOptions: [
+		firebase.auth.EmailAuthProvider.PROVIDER_ID
+		],
+	signInSuccessUrl: 'https://amelia15.github.io/VirtualGuide/adminka.html',
+	callbacks: {
+    signInSuccessWithAuthResult: function(authResult, redirectUrl) {
+      // User successfully signed in.
+      // Return type determines whether we continue the redirect automatically
+      // or whether we leave that to developer to handle.
+      return true;
+    },
+    uiShown: function() {
+      // The widget is rendered.
+      // Hide the loader.
+      document.getElementById('loader').style.display = 'none';
+    }
+  }
+}
+ui.start('#firebaseui-auth-container', uiConfig);
+
+</script>
+ <style>
+   body { 
+    background-color: #abeeab;
+	margin:auto;
+	margin-top:15%;
+}
+</style>
+</head>
+<!--<body>
+	<input type="button" id="signin"/>
+	<script src="authent_form.js"></script>-->
+</body>
+</html>
