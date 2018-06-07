@@ -1,4 +1,4 @@
-//ссылка на базу данных
+//посилання на базу даних
 const db = firebase.database();
 
 const page = {
@@ -13,9 +13,9 @@ const page = {
                	tinymce.get('desc').setContent(item.val());
                 break;
 			case "sights":
-               	document.getElementById('sights').value = item.val();
+				tinymce.get('sights').setContent(item.val());
                 break;
-              }
+        }
     },
 	 createOptions: function(item){
 		this.post.innerHTML = "<option value='add_new' selected>Додати новий маршрут</option>";
@@ -29,9 +29,9 @@ const page = {
 
 page.post.onchange = function(){
 	document.getElementById("way_name").value = "";
-	document.getElementById('sights').value = "";
 	try {
 		tinymce.get('desc').setContent("");
+		tinymce.get('sights').setContent("");
 	}
 	catch(e) 
 	{
@@ -52,26 +52,25 @@ public.onclick = function(){
 	var tmp = {
 		name: document.getElementById("way_name").value,
 		desc: tinymce.get('desc').getContent(),
-		sights: document.getElementById('sights').value,
-	  };
+		sights: tinymce.get('sights').getContent(),
+	};
 	if (page.post.value=='add_new') {
 		var newPost = db.ref('ways').push();
 		newPost.set(tmp);
 	}
 	else {
 		db.ref('ways/'+page.post.value).set(tmp);
-  }
+    }
 }
 
 document.getElementById("delete").onclick = function(){
-
 	 db.ref('ways/'+page.post.value).remove();
 	 page.ref.on('child_removed', function (data) {
 		page.show(data);
 	});	
 	document.getElementById("way_name").value = "";
-	document.getElementById('sights').value = "";
 	try {
+		tinymce.get('sights').setContent("");
 		tinymce.get('desc').setContent("");
 	}
 	catch(e) 
