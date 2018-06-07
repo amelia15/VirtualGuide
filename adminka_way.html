@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <title>Virtual_guide</title>
-  <link rel="stylesheet" href="styles/adminka_styles.css"/>
+  <link rel="stylesheet" href="adminka_styles.css"/>
  <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script> 
    <script>
         //инициализация Firebase - подставьте свои значения
@@ -15,46 +15,49 @@
     </script>	
 	<script src='https://cloud.tinymce.com/stable/tinymce.min.js'></script>
   <script>
-  tinymce.init({
-    selector: '#desc',
-	height: "300"
-  });
+	 tinymce.init({
+		selector: '#desc',
+		height: "300"
+	 });
+	 tinymce.init({
+		selector: '#sights',
+		height: "150",
+		menubar: false,
+			plugins: [
+				'advlist autolink lists link image charmap print preview anchor textcolor',
+				'searchreplace visualblocks code fullscreen',
+				'insertdatetime media table contextmenu paste code help wordcount',
+				"code"
+			 ],
+			toolbar: 'insert | undo redo |  formatselect | bold italic backcolor  | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help | code',
+				content_css: [
+					'//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+					'//www.tinymce.com/css/codepen.min.css'
+				]
+	});
   </script>
 </head>
 
 <body>    
 	<div>
-	<nav class="top-menu">
-	<ul class="menu-main">
-		<li><a href="adminka.html">Редагування головної сторінки</a></li>
-		<li><a href="adminka_way.html" class="current">Редагування сторінки з маршрутами</a></li>
-		<li><a href="adminka_comments.html">Редагування коментарів</a></li>
-	</ul>
-	</nav>
+		<nav class="top-menu">
+			<ul class="menu-main">
+				<li><a href="adminka.html">Редагування головної сторінки</a></li>
+				<li><a href="adminka_way.html" class="current">Редагування сторінки з маршрутами</a></li>
+				<li><a href="adminka_comments.html">Редагування коментарів</a></li>
+			</ul>
+		</nav>
 		<h2> Оберіть назву поста для редагування: </h2>
 		<form>
-			<p><select size="1" name="post_type" id="post_type">
-				<option value="way0" id="way0" selected>Створити новий маршрут</option>
-			</select></p>
-			
+			<p><select size="1" name="post_type" id="post_type"></select></p>
 			<br/><p><input placeholder="Назва маршруту" name="way_name" id="way_name" /> </p>
 			<p><textarea placeholder="Опис маршруту" size="1000" name="desc" id="desc"></textarea> </p>
-			<p><textarea placeholder="Пам'ятки для відвідування" name="sights" id="sights" size="700"></textarea> </p>
+			<p><textarea placeholder="Пам'ятки для відвідування" size="1000" name="sights" id="sights"></textarea> </p>
 		</form>
-		<!--<input type="submit" value="Опублікувати" id="public"/>
-		<input type="submit" value="Видалити" id="delete"/>-->
-		<span id="public" class="button pubico">Опублікувати</span>
-		<span id="delete" class="button delico">Видалити</span>
+		<input type="submit" value="Опублікувати" id="public"/>
+		<input type="submit" value="Видалити" id="delete"/>
 	</div>
 	
-	
-	
-	<!--<script type="text/javascript">
-	function googleTranslateElementInit() {
-		new google.translate.TranslateElement({pageLanguage: 'uk', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false,  gaTrack: true, gaId: 'UA-15081999'}, 'google_translate_element');
-	}
-	</script>
-	<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>-->
-	<script src="scripts/admin_way.js"></script>
+	<script src="admin_way.js"></script>
 </body>
 </html>
