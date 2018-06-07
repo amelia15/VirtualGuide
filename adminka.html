@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <title>Virtual_guide</title>
-  <link rel="stylesheet" href="adminka_styles.css"/> 
+  <link rel="stylesheet" href="styles/adminka_styles.css"/> 
   <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script> 
   <script>
      //ініціалізація Firebase
@@ -17,8 +17,20 @@
     <script>
 		tinymce.init({
 			selector: '#post_text',
-			height: "500"
-		 });
+			height: "500",
+			menubar: false,
+			plugins: [
+				'advlist autolink lists link image charmap print preview anchor textcolor',
+				'searchreplace visualblocks code fullscreen',
+				'insertdatetime media table contextmenu paste code help wordcount',
+				"code"
+			 ],
+			 toolbar: 'insert | undo redo |  formatselect | bold italic backcolor  | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help | code',
+			 content_css: [
+				'//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+				'//www.tinymce.com/css/codepen.min.css'
+			]
+		});
 	</script>
 </head>
 
@@ -43,6 +55,6 @@
 	</div>
 	
 	<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-	<script src="admin.js"></script>
+	<script src="scripts/admin.js"></script>
 </body>
 </html>
