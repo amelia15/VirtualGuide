@@ -6,7 +6,7 @@ h1 {
 	text-align: center;
 }
 
-#way_name, #sights, #post_name{
+#way_name, #sights, #post_name, #name_json{
 	width: 100%; 
 }
  
