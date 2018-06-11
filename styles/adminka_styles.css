@@ -1,8 +1,8 @@
-body{
+body {
 	background-color: #ebfbeb;
 }
 
-h1{
+h1 {
 	text-align: center;
 }
 
@@ -10,100 +10,90 @@ h1{
 	width: 100%; 
 }
  
-#sights{
+#sights {
 	height:100px;
 }
-select{
+
+select {
 	border: 2px solid #1e311e;
 	height: 30px;
 	font-family: Arial, sans-serif; /* Гарнитура шрифта */
    	font-size: 15px; 
 }
 
-#public, #delete, .delete{
+#public, #delete, .delete {
 	cursor: default;
-display: inline-block;
-white-space: nowrap;
-background-color: #ccc;
-background-image: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ccc));
-background-image: -webkit-linear-gradient(top, #eee, #ccc);
-background-image: -moz-linear-gradient(top, #eee, #ccc);
-background-image: -ms-linear-gradient(top, #eee, #ccc);
-background-image: -o-linear-gradient(top, #eee, #ccc);
-background-image: linear-gradient(top, #eee, #ccc);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#cccccc');
-border: 1px solid #777;
-padding: 0 1.5em;
-margin: 0.5em;
-font: bold 1em/2em Arial, Helvetica;
-text-decoration: none;
-color: #333;
-text-shadow: 0 1px 0 rgba(255,255,255,.8);
--moz-border-radius: .2em;
--webkit-border-radius: .2em;
-border-radius: .2em;
--moz-box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.3);
--webkit-box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.3);
-box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.3);
+	display: inline-block;
+	white-space: nowrap;
+	background-color: #ccc;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ccc));
+	background-image: -webkit-linear-gradient(top, #eee, #ccc);
+	background-image: -moz-linear-gradient(top, #eee, #ccc);
+	background-image: -ms-linear-gradient(top, #eee, #ccc);
+	background-image: -o-linear-gradient(top, #eee, #ccc);
+	background-image: linear-gradient(top, #eee, #ccc);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#cccccc');
+	border: 1px solid #777;
+	padding: 0 1.5em;
+	margin: 0.5em;
+	font: bold 1em/2em Arial, Helvetica;
+	text-decoration: none;
+	color: #333;
+	text-shadow: 0 1px 0 rgba(255,255,255,.8);
+			-moz-border-radius: .2em;
+			-webkit-border-radius: .2em;
+			border-radius: .2em;
+			-moz-box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.3);
+			-webkit-box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.3);
+			box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.3);
 }
  
-#public:hover, #delete:hover, .button:hover , .delete:hover
-{
-background-color: #ddd;
-background-image: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#ddd));
-background-image: -webkit-linear-gradient(top, #fafafa, #ddd);
-background-image: -moz-linear-gradient(top, #fafafa, #ddd);
-background-image: -ms-linear-gradient(top, #fafafa, #ddd);
-background-image: -o-linear-gradient(top, #fafafa, #ddd);
-background-image: linear-gradient(top, #fafafa, #ddd);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fafafa', EndColorStr='#dddddd');
+#public:hover, #delete:hover, .button:hover , .delete:hover {
+	background-color: #ddd;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#ddd));
+	background-image: -webkit-linear-gradient(top, #fafafa, #ddd);
+	background-image: -moz-linear-gradient(top, #fafafa, #ddd);
+	background-image: -ms-linear-gradient(top, #fafafa, #ddd);
+	background-image: -o-linear-gradient(top, #fafafa, #ddd);
+	background-image: linear-gradient(top, #fafafa, #ddd);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fafafa', EndColorStr='#dddddd');
 }
  
-#public:active, #delete:active, span:active, .delete:active
-{
--moz-box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
--webkit-box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
-box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
-position: relative;
-top: 1px;
+#public:active, #delete:active, span:active, .delete:active {
+	position: relative;
+	top: 1px;
+		-moz-box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
+		-webkit-box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
+	box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
 }
  
-#public:focus, #delete:focus, .delete:focus
-{
-outline: 0;
-background: #fafafa;
+#public:focus, #delete:focus, .delete:focus {
+	outline: 0;
+	background: #fafafa;
 } 
  
-#public:before, #delete:before, span:before, .delete:before
-{
-background: #ccc;
-background: rgba(0,0,0,.1);
-float: left;
-width: 1em;
-text-align: center;
-font-size: 1.5em;
-margin: 0 1em 0 -1em;
-padding: 0 .2em;
--moz-box-shadow: 1px 0 0 rgba(0,0,0,.5), 2px 0 0 rgba(255,255,255,.5);
--webkit-box-shadow: 1px 0 0 rgba(0,0,0,.5), 2px 0 0 rgba(255,255,255,.5);
-box-shadow: 1px 0 0 rgba(0,0,0,.5), 2px 0 0 rgba(255,255,255,.5);
--moz-border-radius: .15em 0 0 .15em;
--webkit-border-radius: .15em 0 0 .15em;
-border-radius: .15em 0 0 .15em;
+#public:before, #delete:before, span:before, .delete:before {
+	background: #ccc;
+	background: rgba(0,0,0,.1);
+	float: left;
+	width: 1em;
+	text-align: center;
+	font-size: 1.5em;
+	margin: 0 1em 0 -1em;
+	padding: 0 .2em;
+		-moz-box-shadow: 1px 0 0 rgba(0,0,0,.5), 2px 0 0 rgba(255,255,255,.5);
+		-webkit-box-shadow: 1px 0 0 rgba(0,0,0,.5), 2px 0 0 rgba(255,255,255,.5);
+	box-shadow: 1px 0 0 rgba(0,0,0,.5), 2px 0 0 rgba(255,255,255,.5);
+		-moz-border-radius: .15em 0 0 .15em;
+		-webkit-border-radius: .15em 0 0 .15em;
+	border-radius: .15em 0 0 .15em;
 }
- 
-/* Hexadecimal entities for the icons */
- 
 
- 
-#delete:before, span.delico:before,  .delete:before
-{
-content: "\2718";
+#delete:before, span.delico:before,  .delete:before {
+	content: "\2718";
 }
-#public:before/*, span:before*/
-{
+#public:before {
 	content: "\270E";
-
 }
 
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption');
@@ -117,8 +107,8 @@ content: "\2718";
     inset 150px 0 150px -150px rgba(255,255,255,.12), 
     inset -150px 0 150px -150px rgba(255,255,255,.12);
 }
-.top-menu:before,
-.top-menu:after {
+
+.top-menu:before, .top-menu:after {
   content: "";
   position: absolute;
   z-index: 2;
@@ -140,8 +130,7 @@ content: "\2718";
   margin: 0;
   text-align: center;
 }
-.menu-main:before, 
-.menu-main:after {
+.menu-main:before, .menu-main:after {
   content: "";
   position: absolute;
   width: 50px;
@@ -172,8 +161,7 @@ content: "\2718";
   color: white;
   transition: .3s linear;
 }
-.menu-main a.current,
-.menu-main a:hover {background: rgba(0,0,0,.2);}
+.menu-main a.current, .menu-main a:hover {background: rgba(0,0,0,.2);}
 @media (max-width: 680px) {
 .top-menu {margin: 0;}
 .menu-main li {
@@ -192,6 +180,8 @@ content: "\2718";
 	padding:10px 10px 10px 10px;
 	border: 2px solid #1e311e;
 	margin-bottom:10px;
+	display: flex;
+	justify-content: space-between;
 }
  
 h2{
@@ -199,9 +189,10 @@ h2{
 }
 
 .commText{
-	font-size: 17px; 
+	color:#eef9e3;
+	font-size: 18px; 
 }
 
 .buttonDel{
-	padding-left:600px;
-}
+	height:32px;
+}	
