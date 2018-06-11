@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="styles/main.css"/>
   <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
   <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
-   <script>
+  <script>
         //инициализация Firebase - подставьте свои значения
         var config = {
             apiKey: "AIzaSyAjEt56_U19qrSVbi0y80eLA_3Hob-YCxg",
@@ -16,18 +16,19 @@
     </script>
 	<script src="scripts/fb_main.js"></script>
 </head>
-<body>    
-	<div id="google_translate_element"></div>
-	
+<body>  
+	<div id="header">
+		<div id="google_translate_element"></div>
+		<div><a href="authent_form.html" class="adminButton"> <span id="AdminText"> Адміністратору </span></a></div>
+	</div>
 	<div class="container">
-		<a href="authent_form.html" class="adminButton"> Адміністратору </a>
 		<a href="way_KP.html" class="menuButton" id="next"> Маршрути </a>
 		<div class="top">
 			<h1 class="appName">Віртуальний екскурсовод</h1>
 			<h1 class="cityName">Харків</h1>
 			<figure data-title="Герб Ха́ркова був затверджений 14 вересня 1995 року рішенням Харківської міської ради.   Зелений колір у геральдиці символізує надію, радість, достаток. Ріг достатку символізує природні багатства. Кадуцей — незмінний атрибут бога Меркурія, який в епоху античності вважався заступником торговців, мандрівників, парламентерів. Змії, що оповили кадуцей, символізують мудрість." > <img src="images/герб_!.png" alt="coat of arms" /> <figcaption> Герб Харкова <figcaption></figure>
 		</div>
-		<div class="info"> </div>
+		<div class="info"> 	</div>
 		<a href="way_KP.html" class="menuButton" id="next"> Маршрути </a>
 	</div>
 	
