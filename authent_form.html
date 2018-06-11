@@ -21,50 +21,50 @@
 
 </head>
 <body>
-<h1>Вхід в панель адміністратора</h1>
-<div id="firebaseui-auth-container"></div>
-<div id="loader">Loading...</div>
-<script>
-	var ui = new firebaseui.auth.AuthUI(firebase.auth());
-	var uiConfig = {
-		signInOptions: [
-		firebase.auth.EmailAuthProvider.PROVIDER_ID
-		],
-	signInSuccessUrl: 'https://amelia15.github.io/VirtualGuide/adminka.html',
-	callbacks: {
-    signInSuccessWithAuthResult: function(authResult, redirectUrl) {
-      // User successfully signed in.
-      // Return type determines whether we continue the redirect automatically
-      // or whether we leave that to developer to handle.
-      return true;
-    },
-    uiShown: function() {
-      // The widget is rendered.
-      // Hide the loader.
-      document.getElementById('loader').style.display = 'none';
-    }
-  }
-}
-ui.start('#firebaseui-auth-container', uiConfig);
+	<h1>Вхід в панель адміністратора</h1>
+	<div id="firebaseui-auth-container"></div>
+	<div id="loader">Loading...</div>
+	<script>
+		var ui = new firebaseui.auth.AuthUI(firebase.auth());
+		var uiConfig = {
+			signInOptions: [
+			firebase.auth.EmailAuthProvider.PROVIDER_ID
+			],
+		signInSuccessUrl: 'https://amelia15.github.io/VirtualGuide/adminka.html',
+		callbacks: {
+	    signInSuccessWithAuthResult: function(authResult, redirectUrl) {
+	      // User successfully signed in.
+	      // Return type determines whether we continue the redirect automatically
+	      // or whether we leave that to developer to handle.
+	      return true;
+	    },
+	    uiShown: function() {
+	      // The widget is rendered.
+	      // Hide the loader.
+	      document.getElementById('loader').style.display = 'none';
+	    }
+	  }
+	}
+	ui.start('#firebaseui-auth-container', uiConfig);
 
-</script>
- <style>
-   body { 
-        background-color: #abeeab;
-	margin:auto;
-  }
-	 
-   h1{
-	margin:auto;
-	margin-top:15px;
-	color:#446e54;
-	font-size:30px;
-   }
-	 
-	#firebaseui-auth-container { 
-		margin-top:15%;
-	 }
-</style>
-</head>
+	</script>
+	 <style>
+	   body { 
+		background-color: #abeeab;
+		margin:auto;
+	   }
+
+	   h1{
+		/*margin:auto;*/
+		margin-top:15px;
+		color:#446e54;
+		font-size:30px;
+	   }
+
+		#firebaseui-auth-container { 
+			margin-top:15%;
+		 }
+	</style>
+	</head>
 </body>
 </html>
