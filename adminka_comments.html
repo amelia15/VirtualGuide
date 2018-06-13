@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8"/>
   <title>Virtual_guide</title>
-  <link rel="stylesheet" href="styles/adminka_styles.css"/>
+  <link rel="stylesheet" href="adminka_styles.css"/>
  <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script> 
    <script>
-        //инициализация Firebase - подставьте свои значения
+        //инициализация Firebase 
         var config = {
             apiKey: "AIzaSyAjEt56_U19qrSVbi0y80eLA_3Hob-YCxg",
             databaseURL: "https://choose-way.firebaseio.com/"
@@ -16,39 +16,31 @@
 	<script src='https://cloud.tinymce.com/stable/tinymce.min.js'></script>
   <script>
   tinymce.init({
-    selector: '#desc'
+    selector: '#desc',
+	plugins: "code",
+  toolbar: "code",
+  menubar: "tools"
   });
   </script>
 </head>
 
 <body>    
 	<div>
-	<nav class="top-menu">
-	<ul class="menu-main">
-		<li><a href="adminka.html">Редагування головної сторінки</a></li>
-		<li><a href="adminka_way.html" >Редагування сторінки з маршрутами</a></li>
-		<li><a href="adminka_comments.html" class="current">Редагування коментарів</a></li>
-	</ul>
-	</nav>
+		<nav class="top-menu">
+			<ul class="menu-main">
+				<li><a href="adminka.html">Редагування головної сторінки</a></li>
+				<li><a href="adminka_way.html" >Редагування сторінки з маршрутами</a></li>
+				<li><a href="adminka_comments.html" class="current">Редагування коментарів</a></li>
+			</ul>
+		</nav>
 		<h2> Оберіть маршрут: </h2> 
 		<form>
-			<p><select size="1" name="post_type" id="post_type">
-				
-			</select></p>
+			<p><select size="1" name="post_type" id="post_type"></select></p>
 		</form>
-	
-		
-	<div class="com_field"></div>
+		<div class="com_field"></div>
 	</div>
 	
-	
-	
-	<script type="text/javascript">
-	function googleTranslateElementInit() {
-		new google.translate.TranslateElement({pageLanguage: 'uk', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false,  gaTrack: true, gaId: 'UA-15081999'}, 'google_translate_element');
-	}
-	</script>
 	<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-	<script src="scripts/admin_comments.js"></script>
+	<script src="admin_comments.js"></script>
 </body>
 </html>
