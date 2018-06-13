@@ -15,6 +15,9 @@ const page = {
 			case "sights":
 				tinymce.get('sights').setContent(item.val());
                 break;
+			case "json":
+				document.getElementById("name_json").value = item.val();
+                break;
         }
     },
 	 createOptions: function(item){
@@ -29,7 +32,9 @@ const page = {
 
 page.post.onchange = function(){
 	document.getElementById("way_name").value = "";
+	
 	try {
+		document.getElementById("name_json").value = "";
 		tinymce.get('desc').setContent("");
 		tinymce.get('sights').setContent("");
 	}
@@ -50,26 +55,29 @@ page.post.onchange();
 
 public.onclick = function(){
 	var tmp = {
-		name: document.getElementById("way_name").value,
-		desc: tinymce.get('desc').getContent(),
-		sights: tinymce.get('sights').getContent(),
+		"name": document.getElementById("way_name").value,
+		"desc": tinymce.get('desc').getContent(),
+		"sights": tinymce.get('sights').getContent(),
+		"json": document.getElementById("name_json").value
 	};
 	if (page.post.value=='add_new') {
 		var newPost = db.ref('ways').push();
 		newPost.set(tmp);
 	}
 	else {
-		db.ref('ways/'+page.post.value).set(tmp);
+		db.ref('ways/'+page.post.value).update (tmp);
     }
 }
 
 document.getElementById("delete").onclick = function(){
-	 db.ref('ways/'+page.post.value).remove();
-	 page.ref.on('child_removed', function (data) {
+	db.ref('ways/'+page.post.value).remove();
+	page.ref.on('child_removed', function (data) {
 		page.show(data);
 	});	
 	document.getElementById("way_name").value = "";
+	
 	try {
+		document.getElementById("name_json").value = "";
 		tinymce.get('sights').setContent("");
 		tinymce.get('desc').setContent("");
 	}
