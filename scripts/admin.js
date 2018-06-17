@@ -1,19 +1,16 @@
 'use strict';
-//ссылка на базу данных
-const db = firebase.database();
+const db = firebase.database();//ссылка на базу данных
 
 const page = {
 	post: document.getElementById("post_type"),
     ref: db.ref(`main/city_name_info`),
-    //task: document.getElementsByClassName('task')[0],
     show: function(item) {
         switch (item.key) {
             case "name":
 				document.getElementById("post_name").value = item.val();
                 break;
             case "text":
-                //document.getElementById("post_text").value = item.val();
-				tinymce.get('post_text').setContent(item.val());
+                tinymce.get('post_text').setContent(item.val());
                 break;
               }
     },
@@ -21,10 +18,8 @@ const page = {
 		this.post.innerHTML = "<option value='add_new' selected>Додати новий пост</option>";
         for (let i in item){
             this.post.innerHTML+= `<option value="${i}">${item[i].name}</option>`;
-			
-        }
-		/*listRef = db.ref(`main/symbols_info`);*/
-    }
+       }
+	}
 };
 
 page.post.onchange = function(){
@@ -32,8 +27,7 @@ page.post.onchange = function(){
 	try {
 		tinymce.get('post_text').setContent("");
 	}
-	catch(e) 
-	{
+	catch(e) {
 		console.log('no mce');
 	}
 	
@@ -68,25 +62,17 @@ document.getElementById("delete").onclick = function(){
 	 page.ref.on('child_removed', function (data) {
 		page.show(data);
 	});
-	/*setTimeout( , 2000);*/
-
+	
 	document.getElementById("post_name").value = "";
 	try {
 		tinymce.get('post_text').setContent("");
 	}
-	catch(e) 
-	{
+	catch(e) {
 		console.log('no mce');
 	}
 } 
 
 let main1 = db.ref('main');
-/*ways.on('child_added', function (data) {
-    page.showLinks(data);
-	});
-ways.on('child_changed', function (data) {
-    page.showLinks(data);
-	});*/
 let list = [];
 main1.on('value', function(snap) {
 	list = snap.val(); console.log(list);
