@@ -65,8 +65,8 @@ img {
 figure:hover::after {
 	content: attr(data-title); /* Выводим текст */
     position: absolute; /* Абсолютное позиционирование */
-	left: 780px;
-	top: 300px; /* Положение подсказки */
+	left: 61%;
+	top: 55vh; /* Положение подсказки */
     z-index: 1; /* Отображаем подсказку поверх других элементов */
     background: rgba(111,245,158,0.55); /* Полупрозрачный цвет фона */
     font-family: Arial, sans-serif; /* Гарнитура шрифта */
@@ -146,9 +146,9 @@ h2{
 	width: 93%;
 	height: 5%; 
 	background: linear-gradient(to bottom, #00FF7F 0%, #00FF00 100%);
-    font-size: 25px; 
-    color: #8B008B; 
-    border: 1px solid black; 
+    	font-size: 25px; 
+    	color: #8B008B; 
+    	border: 1px solid black; 
 	border-radius: 30px; 
 	margin-bottom: 30px;
  }
@@ -161,19 +161,19 @@ h2{
 	width: 93%;
 	height: 5%; 
 	background: linear-gradient(to top, #00BFFF 0%, #00FF00 100%);
-    font-size: 28px; 
-    color: #8B008B; 
-    border: 1px solid black;
+   	font-size: 28px; 
+   	color: #8B008B; 
+    	border: 1px solid black;
 	border-radius: 30px; 
 	margin-bottom: 30px;
  }
  
  a {
 	-webkit-box-shadow: rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-     -khtml-box-shadow: rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-       -moz-box-shadow: rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-         -o-box-shadow: rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-            box-shadow: rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+     	-khtml-box-shadow: rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+       	-moz-box-shadow: rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+        -o-box-shadow: rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+         box-shadow: rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
  }
  
  .text_info{
