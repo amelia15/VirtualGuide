@@ -23,8 +23,7 @@
                 center: {lat: 50.0106394, lng: 36.2411565} //center of view
             });
 
-            function getQueryVariable(variable) //get a variable from url
-            {
+            function getQueryVariable(variable) {
                 var query = window.location.search.substring(1);
                 var vars = query.split("&");
                 for (var i=0;i<vars.length;i++) {
@@ -35,8 +34,7 @@
             }
             // Load a GeoJSON from the same server as our demo.
             map.data.loadGeoJson('data/'+getQueryVariable('way'));
-            
-			if(navigator.geolocation) {
+            if(navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(function(position) {
                     var pos = new google.maps.LatLng(position.coords.latitude,
                         position.coords.longitude);
@@ -44,11 +42,10 @@
                     map.setZoom(16);
                 });
             }
-            // global infowindow
-            var infowindow = new google.maps.InfoWindow();
+       
+            var infowindow = new google.maps.InfoWindow(); // global infowindow
             // When the user clicks, open an infowindow
             map.data.addListener('click', function(event) {
-                //var id = event.feature.getProperty("BUS_STOP_N");
                 var name = event.feature.getProperty("LOC_DESC");
                 var pos = event.feature.getGeometry().get();
                 infowindow.setContent("<strong>"+name+"</strong><br/>Вопрос"); //можно вставить вопросы из json!!!!!
@@ -58,74 +55,66 @@
             });
 			
 			// Create the search box and link it to the UI element.
-        var input = document.getElementById('pac-input');
-        var searchBox = new google.maps.places.SearchBox(input);
-        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+			var input = document.getElementById('pac-input');
+			var searchBox = new google.maps.places.SearchBox(input);
+			map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
-        // Bias the SearchBox results towards current map's viewport.
-        map.addListener('bounds_changed', function() {
-          searchBox.setBounds(map.getBounds());
-        });
+			// Bias the SearchBox results towards current map's viewport.
+			map.addListener('bounds_changed', function() {
+				searchBox.setBounds(map.getBounds());
+			});
 
-        var markers = [];
-        // Listen for the event fired when the user selects a prediction and retrieve
-        // more details for that place.
-        searchBox.addListener('places_changed', function() {
-          var places = searchBox.getPlaces();
+			var markers = [];
+			// Listen for the event fired when the user selects a prediction and retrieve more details for that place.
+			searchBox.addListener('places_changed', function() {
+				var places = searchBox.getPlaces();
+				if (places.length == 0) {
+					return;
+				}
+				markers.forEach(function(marker) { // Clear out the old markers.
+				  marker.setMap(null);
+				  });
+				markers = [];
+				  
+				map.data.setStyle({
+					fillColor: 'green',
+					strokeWeight: 1
+				});
 
-          if (places.length == 0) {
-            return;
-          }
+			  // For each place, get the icon, name and location.
+			  var bounds = new google.maps.LatLngBounds();
+			  places.forEach(function(place) {
+				if (!place.geometry) {
+				  console.log("Returned place contains no geometry");
+				  return;
+				}
+				var icon = {
+				  url: place.icon,
+				  size: new google.maps.Size(71, 71),
+				  origin: new google.maps.Point(0, 0),
+				  anchor: new google.maps.Point(17, 34),
+				  scaledSize: new google.maps.Size(25, 25)
+				};
 
-          // Clear out the old markers.
-          markers.forEach(function(marker) {
-            marker.setMap(null);
-          });
-          markers = [];
-		  
-		  map.data.setStyle({
-			fillColor: 'green',
-		strokeWeight: 1
-		});
+				// Create a marker for each place.
+				markers.push(new google.maps.Marker({
+				  map: map,
+				  icon: icon,
+				  title: place.name,
+				  position: place.geometry.location
+				}));
 
-          // For each place, get the icon, name and location.
-          var bounds = new google.maps.LatLngBounds();
-          places.forEach(function(place) {
-            if (!place.geometry) {
-              console.log("Returned place contains no geometry");
-              return;
-            }
-            var icon = {
-              url: place.icon,
-              size: new google.maps.Size(71, 71),
-              origin: new google.maps.Point(0, 0),
-              anchor: new google.maps.Point(17, 34),
-              scaledSize: new google.maps.Size(25, 25)
-            };
-
-            // Create a marker for each place.
-            markers.push(new google.maps.Marker({
-              map: map,
-              icon: icon,
-              title: place.name,
-              position: place.geometry.location
-            }));
-
-            if (place.geometry.viewport) {
-              // Only geocodes have viewport.
-              bounds.union(place.geometry.viewport);
-            } else {
-              bounds.extend(place.geometry.location);
-            }
-          });
-          map.fitBounds(bounds);
-        });
-        }
-		//google.maps.event.addDomListener(window, 'load', initialize);
-		
-		
-
-    </script>
+				if (place.geometry.viewport) {
+				  // Only geocodes have viewport.
+				  bounds.union(place.geometry.viewport);
+				} else {
+				  bounds.extend(place.geometry.location);
+				}
+			  });
+			  map.fitBounds(bounds);
+			});
+     }
+	</script>
 </head>
 <body>
 	<div id="header">
@@ -142,17 +131,16 @@
 			Введіть ім'я:<br>
 			<input placeholder="Введіть ім'я:" name="author" type="text" size="30" class="pole" id="author" required pattern=".{2,}"><br/><br/>
 			<div class="mistake"></div>	
-				
 			Залиште свій коментар:<br/>
 			<textarea name="text" rows="5" cols="50" id="text" required pattern=".{2,}"></textarea><br/> 
-			<div class="mistake"></div>	<br/>
+			<div class="mistake"></div><br/>
 			<span id="public" class="button pubico">Залишити відгук</span>
 		</form>
 	</div>
 	<div class="com_field"> </div>
 			
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBx0WUHoYREYOD-VyWQ15p7Yy_1BazAcAI&libraries=places&callback=initialize"async defer></script>
-	<script src="scripts/fb_comments.js"></script>
+	<script src="fb_comments.js"></script>
 		<script type="text/javascript">
 	function googleTranslateElementInit() {
 		new google.translate.TranslateElement({pageLanguage: 'uk', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false,  gaTrack: true, gaId: 'UA-15081999'}, 'google_translate_element');
