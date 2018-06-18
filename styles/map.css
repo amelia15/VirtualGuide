@@ -147,7 +147,7 @@ span>.button {
     top: 100px;
     left: 40%;
     display: inline-block;
-    margin: 0 auto;
+    margin: auto;
     
     -webkit-border-radius: 10px;
     
