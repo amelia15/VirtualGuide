@@ -36,9 +36,8 @@ h2{
                  -10px 20px 5px rgba(0,0,0,0.05);
 }
  
-.desc {
+.desc>p{
 	color: #DC143C;
-	
 }
 
 .ways>a{
