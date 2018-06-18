@@ -35,6 +35,7 @@ page1.post.onchange = function(){
 listRef = db.ref('ways/way1/comments');
 listRef.on('child_added', function (data) {
         addItem(data);
+		setOnclick();
 });
     
 listRef.on('child_changed', function(data) {//если в бд что-то изменили
