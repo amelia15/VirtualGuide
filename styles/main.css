@@ -47,7 +47,7 @@ figure {
 	border: 1px solid #000000;
 	padding: 20 px; 
 	height: 380px;
-	width: 300px;
+	width: 290px;
 	margin: auto;
 
 }
@@ -55,7 +55,7 @@ figure {
 figcaption {
 	text-align: center;
 	font-size: 20px;
-    color: #00FA9A; 
+   	color: #00FA9A; 
 }
 
 img {
@@ -84,6 +84,7 @@ figure:hover::after {
 	font-size: 22px; 
     padding: 5px 40px; 
 	line-height:120%;
+	 cursor: pointer;
  }
   
  button:hover, .menuButton:hover{
